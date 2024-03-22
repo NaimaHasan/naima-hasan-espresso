@@ -16,16 +16,18 @@ export const HomeCarouselCard = () => {
   return (
     <div>
       <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
-      <Image src={heroImage} className="carousel-card-image" />
+        <Image src={heroImage} className="carousel-card-image" />
         <div className="carousel-card-heart">
           {isHeartFilled ? (
             <HeartFill
+              size="18px"
               className={isHeartFilled ? "icon-hover" : ""}
               style={{ color: "red" }}
               onClick={handleHeartClick}
             />
           ) : (
             <Heart
+              size="18px"
               className={isHoveredHeart ? "icon-hover" : ""}
               style={{ color: isHoveredHeart ? "red" : "white" }}
               onMouseEnter={() => setIsHoveredHeart(true)}
@@ -34,13 +36,7 @@ export const HomeCarouselCard = () => {
             />
           )}
         </div>
-        <Card.Body>
-          <Card.Title>Title</Card.Title>
-
-          <Card.Text>
-            <h6>Description</h6>
-          </Card.Text>
-        </Card.Body>
+        <Card.Body>Title</Card.Body>
       </Card>
     </div>
   );
