@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Heart, HeartFill } from "react-bootstrap-icons";
 import { Card } from "react-bootstrap";
-import { Image } from "react-bootstrap-icons";
+import Image from "react-bootstrap/Image";
 import heroImage from "../../../assets/homepage/hero.jpg";
 import "./HomeCarouselCard.css";
 
@@ -27,7 +27,7 @@ export const HomeCarouselCard = () => {
           ) : (
             <Heart
               className={isHoveredHeart ? "icon-hover" : ""}
-              style={{ color: isHoveredHeart ? "red" : "inherit" }}
+              style={{ color: isHoveredHeart ? "red" : "white" }}
               onMouseEnter={() => setIsHoveredHeart(true)}
               onMouseLeave={() => setIsHoveredHeart(false)}
               onClick={handleHeartClick}
