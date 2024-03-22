@@ -1,0 +1,948 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Cappuccino",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/cappuccino-6b1f5c9.png?quality=90&webp=true&resize=300,272",
+            "description": "Cappuccino, a classic Italian coffee creation,\nCombines espresso, steamed milk, and frothy foam in harmonious relation.\nIts rich flavor and creamy texture delight the senses with each sip's invitation.",
+            "ingredients": [
+                {
+                    "name": "Espresso",
+                    "quantity": "60ml"
+                },
+                {
+                    "name": "Steamed Foamed Milk",
+                    "quantity": "150-200ml"
+                },
+                {
+                    "name": "Cinnamon or Cocoa Powder",
+                    "quantity": "Sprinkling",
+                    "optional": true
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Pour the espresso into a 250ml heatproof mug."
+                },
+                {
+                    "number": 2,
+                    "description": "Next, make the steamed milk. If you are using an espresso machine steam wand, hold the wand just under the surface, making sure you don’t let any cold air in. It shouldn’t make any hissing noises or be spitting milk drops anywhere. Try to use steam jets to spin the milk around in a whirlpool-like motion, pulling the jug downwards slowly as the milk heats. This is called 'stretching' the milk and helps with foam production. It should be foamy and creamy when ready. If you have a separate steamer attachment on your bean-to-cup machine, steam the milk separately in a silver jug for pouring. You can use an electric milk frother (heat the milk in the microwave or on the hob first, making sure it doesn't boil). Or, pour the warm milk into a French press, then carefully plunge the filter up and down to push air through the milk to create foam."
+                },
+                {
+                    "number": 3,
+                    "description": "Pour the foamy milk over the espresso gently from a low height. With a cappuccino, you don’t need to mix the coffee and milk as you would for a latte or flat white – you want the foam to be smooth and creamy. Try to float it on top – the milk should dissipate underneath the foam, allowing the more solid milk foam to settle on top with a strong hit of espresso at the bottom of the cup. Sprinkle with cinnamon or cocoa powder, if you like."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Flat White",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Flat-White-d195a5f.png?quality=90&webp=true&resize=975,649",
+            "description": "Flat White, an Aussie-born coffee delight,\nBlending velvety microfoam with bold espresso in perfect sight.\nSmooth and creamy, it offers a refined taste, satisfying day or night.",
+            "ingredients": [
+                {
+                    "name": "Espresso",
+                    "quantity": "60ml"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "100-130ml"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Make the espresso in a 150-170ml heatproof cup using an espresso machine. If you don’t have an espresso machine, you could use compostable pods, a very strong stovetop coffee or concentrated instant coffee that has the consistency of wet sauce."
+                },
+                {
+                    "number": 2,
+                    "description": "Next, steam the milk. If you are using an espresso machine steam wand, hold the wand at least 1-2cm under the surface, making sure you don’t let any cold air in. It shouldn’t make any hissing noises or be spitting milk drops anywhere. Try to use steam jets to spin the milk around in a whirlpool-like motion. If you have a separate steamer attachment on a bean-to-cup machine, steam the milk separately in a silver jug for pouring. You can use an electric milk frother (heat the milk in the microwave or on the hob, making sure it doesn't boil). Or, pour the warm milk into a French press, then carefully plunge the filter up and down to push air through and create foam. If you find your milk too frothy, you can scrape off the overly foamy top with a spoon to reveal smoother milk."
+                },
+                {
+                    "number": 3,
+                    "description": "Pour the milk into the espresso, starting in the middle. As you tip the base of the jug up, start to wiggle it back and forth to make a pattern on top of the espresso. Or, to create a simple heart shape, keep pouring and pushing the milk, tilting the base of the jug up, then restrict the milk by pulling the spout up right at the last second. Your milk should be nicely textured, smooth and not too thick."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Macchiato",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Macchiato-4cea4fd.png?quality=90&webp=true&resize=300,272",
+            "description": "Macchiato, an espresso kissed by a touch of milk,\nBold and robust, yet with a hint of silk.\nIts contrast of flavors creates a symphony, a brewer's skilled ilk.",
+            "ingredients": [
+                {
+                    "name": "Espresso",
+                    "quantity": "30ml"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "a little"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Extract 30ml double shot espresso into an espresso cup or glass."
+                },
+                {
+                    "number": 2,
+                    "description": "Steam the milk. If you are using an espresso machine steam wand, hold the wand at least 1-2cm under the surface, making sure you don’t let any cold air in. It shouldn’t make any hissing noises or be spitting milk drops anywhere. Try to use the steam jets to spin the milk around in a whirlpool-like motion. If you have a separate steamer attachment to your bean-to-cup machine, I often like to steam the milk separately in a silver jug so I can pour it myself. You could also use an electric milk frother or hand whisk (with milk heated in the microwave or stovetop – make sure not to boil). If you don’t have any of these, heat some milk in a pot or microwave and put it in a french press. Carefully plunge the filter in an up/down motion to push air through the hot milk to get foamy milk. If you find your milk too frothy, you can scrape the foamy top off with a spoon."
+                },
+                {
+                    "number": 3,
+                    "description": "Carefully pour a drop (I mean it, a drop) of milk into the espresso and scoop about 1 heaped tsp of warm frothed milk over the top."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Mocha",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png?quality=90&webp=true&resize=300,272",
+            "description": "Mocha, a decadent fusion of chocolate and espresso divine,\nVelvety richness with every sip, a true indulgent sign.\nA harmonious blend of flavors, a sensation that intertwine.",
+            "ingredients": [
+                {
+                    "name": "Milk Chocolate Pieces (or Hot Chocolate Powder)",
+                    "quantity": "20g (finely chopped) or ½ tbsp (powder) + 1 tbsp boiling water"
+                },
+                {
+                    "name": "Double Espresso",
+                    "quantity": "60ml"
+                },
+                {
+                    "name": "Steamed Foamed Milk",
+                    "quantity": "130ml"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Tip the chocolate pieces (or hot chocolate sauce) into a 230ml heatproof cup or mug. If you don't like your mocha too sweet, opt for cocoa powder."
+                },
+                {
+                    "number": 2,
+                    "description": "Pour the espresso over the chocolate or sauce in the cup or mug. If you don’t have an espresso machine, you could use compostable coffee pods, very strong stovetop coffee or concentrated instant coffee. Stir to melt the chocolate, if necessary, and combine it with the espresso."
+                },
+                {
+                    "number": 3,
+                    "description": "Next, steam your milk. Mocha milk should be frothy and thick, and can afford to be a touch hotter than cappuccino or latte milk. If you are using an espresso machine steam wand, hold the wand just under the surface, making sure you don’t let any cold air in. It shouldn’t make any hissing noises or be spitting milk drops anywhere. Try to use steam jets to spin the milk around in a whirlpool-like motion, pulling the jug downwards slowly as the milk heats. This is called 'stretching' the milk, and helps produce more foam. If you have a separate steamer attachment on your bean-to-cup machine, steam the milk separately in a silver jug for pouring. You can use an electric milk frother (heat the milk first in the microwave or on the hob, making sure it doesn't boil). Or, pour the warm milk into a French press, then carefully plunge the filter up and down to push air through the hot milk and create foam. Pour the milk into the cup and stir well to combine."
+                },
+                {
+                    "number": 4,
+                    "description": "Garnish the mocha with grated chocolate or a dusting of cocoa or hot chocolate powder."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Dalgona",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Dalgona-0b6cd4a.png?quality=90&webp=true&resize=300,272",
+            "description": "Dalgona, a frothy Korean delight, crafted with care,\nWhipped instant coffee, sugar, and water, a fluffy affair.\nServed atop cold milk, a sweet sensation to share.",
+            "ingredients": [
+                {
+                    "name": "Instant Coffee",
+                    "quantity": "2 tbsp"
+                },
+                {
+                    "name": "Granulated Sugar",
+                    "quantity": "2 tbsp"
+                },
+                {
+                    "name": "Boiling Water",
+                    "quantity": "2 tbsp"
+                },
+                {
+                    "name": "Ice",
+                    "quantity": "As needed"
+                },
+                {
+                    "name": "Milk or Milk Alternative",
+                    "quantity": "200-250ml"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Combine instant coffee granules, sugar, and boiling water in a bowl. Mix with a milk wizz, egg beater, or whisk for about 1 minute. Put ice into your glass, and add milk. Add the whipped coffee on top of the milk."
+                },
+                {
+                    "number": 2,
+                    "description": "If your coffee is nice and stiff you can add it to your milk in a swirling motion to get a nice ice-cream peak."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Eggnog Latte",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2022/10/eggnog-latte-10a8b5f.jpg?quality=90&webp=true&resize=300,272",
+            "description": "Eggnog Latte, a festive brew to warm the soul,\nRich espresso meets creamy eggnog, creating a holiday goal.\nSpiced with nutmeg, a seasonal delight, bringing joy in every bowl.",
+            "ingredients": [
+                {
+                    "name": "Eggnog or Advocaat",
+                    "quantity": "100ml"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "100ml"
+                },
+                {
+                    "name": "Espresso (hot and freshly made)",
+                    "quantity": "50ml"
+                },
+                {
+                    "name": "Grated Nutmeg",
+                    "quantity": "Small pinch"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Gently heat together the milk and eggnog until just simmering (being careful not to boil). Whisk until frothy or use a milk frother. Pour the espresso into a large mug or heatproof glass, followed by the eggnog/milk mixture. Serve dusted with a little nutmeg."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Gingerbread Latte",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Gingerbread-latte-bb14962.png?quality=90&webp=true&resize=300,272",
+            "description": "Gingerbread Latte, a seasonal treat with a spicy twist,\nEspresso and steamed milk mingle with gingerbread syrup, a bliss.\nTopped with whipped cream and a sprinkle of spice, it's holiday joy you can't resist.",
+            "ingredients": [
+                {
+                    "name": "Ground Ginger",
+                    "quantity": "½ tsp"
+                },
+                {
+                    "name": "Ground Cinnamon",
+                    "quantity": "¼ tsp"
+                },
+                {
+                    "name": "Ground Nutmeg",
+                    "quantity": "Small pinch"
+                },
+                {
+                    "name": "Soft Brown Sugar",
+                    "quantity": "1 tsp (or more according to taste)"
+                },
+                {
+                    "name": "Vanilla Essence or Extract",
+                    "quantity": "2 drops"
+                },
+                {
+                    "name": "Double Espresso",
+                    "quantity": "60ml"
+                },
+                {
+                    "name": "Milk of Your Choice",
+                    "quantity": "250ml"
+                },
+                {
+                    "name": "Vegan Whipped Cream",
+                    "quantity": "To serve"
+                },
+                {
+                    "name": "Crushed Gingersnap Biscuits",
+                    "quantity": "To sprinkle"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Put the ground ginger, cinnamon, nutmeg, sugar, and vanilla into a mug or 300ml cup. Add the espresso and mix ingredients into a wet syrupy paste (or you can use a drop of boiling water or hot milk to help the sugar dissolve)."
+                },
+                {
+                    "number": 2,
+                    "description": "Steam your milk. If you are not using a steam wand or milk frother, you could heat some milk in a pot or microwave and put it in a French press. Carefully plunge the filter in an up/down motion to push air through the hot milk to get foamy milk."
+                },
+                {
+                    "number": 3,
+                    "description": "Pour heated textured milk into your cup so that the syrup mixes with the milk. Dollop some whipped cream on top and dust with ginger and/or cinnamon. Add some crushed gingersnap biscuits on top for extra gingery goodness."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Baileys Coffee",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Baileys-coffee-4287249.png?quality=90&webp=true&resize=300,272",
+            "description": "Baileys Coffee, a luxurious blend for those who dare,\nIrish cream liqueur meets rich espresso with care.\nA decadent indulgence, warming hearts with each sip's flare.",
+            "ingredients": [
+                {
+                    "name": "Caramel Sauce",
+                    "quantity": "30ml, plus extra to garnish"
+                },
+                {
+                    "name": "Double Espresso",
+                    "quantity": "60ml"
+                },
+                {
+                    "name": "Baileys or Irish Cream Liqueur",
+                    "quantity": "50ml"
+                },
+                {
+                    "name": "Hot Steamed Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Whipped Cream",
+                    "quantity": "A dollop"
+                },
+                {
+                    "name": "Caramel Popcorn",
+                    "quantity": "To serve"
+                },
+                {
+                    "name": "Ground Nutmeg or Cinnamon",
+                    "quantity": "A pinch"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Line your cup or double-walled glass with a drizzle of caramel sauce. Add the double espresso, Baileys, and add the steamed milk to combine."
+                },
+                {
+                    "number": 2,
+                    "description": "Add whipped cream on top, then place some crunchy caramel popcorn on top. Drizzle with more caramel. Dust lightly with nutmeg or cinnamon."
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Caramel Iced Coffee",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Caramel-iced-coffee-f73307b.png?quality=90&webp=true&resize=300,272",
+            "description": "Caramel Iced Coffee, a refreshing summer treat,\nCold brew coffee poured over ice, with caramel syrup sweet.\nCreamy and cool, it's a delightful sip to beat the heat.",
+            "ingredients": [
+                {
+                    "name": "Caramel Sauce or Caramel Syrup",
+                    "quantity": "1-2 tbsp or 25ml, plus extra to serve"
+                },
+                {
+                    "name": "Ice",
+                    "quantity": "Large handful"
+                },
+                {
+                    "name": "Double Espresso or Strong Cold Brew or Cold Filter Coffee",
+                    "quantity": "60ml or 150ml"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "180ml"
+                },
+                {
+                    "name": "Whipped Cream",
+                    "quantity": "Optional"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Drizzle or line your 250-300ml glass with some caramel. Add ice, then add the espresso (made with an espresso machine, see above) or the cold brew."
+                },
+                {
+                    "number": 2,
+                    "description": "Fill up the glass with cold milk or alternative milk of your choice leaving about 1-2cm space at the top. Add whipped cream and drizzle some more caramel over the top."
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Calypso Coffee",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/calypso-coffee-1d2d4ea.png?quality=90&webp=true&resize=300,272",
+            "description": "Calypso Coffee, a tropical escape in a cup,\nDark rum and coffee, topped with whipped cream, a joyous pickup.\nHints of cinnamon and nutmeg dance, flavor harmony to sup.",
+            "ingredients": [
+                {
+                    "name": "Strong Hot Filtered Coffee",
+                    "quantity": "150ml"
+                },
+                {
+                    "name": "Coffee Liqueur",
+                    "quantity": "30ml"
+                },
+                {
+                    "name": "Rum",
+                    "quantity": "30ml"
+                },
+                {
+                    "name": "Simple Syrup (optional) or Soft Brown Sugar",
+                    "quantity": "10ml (optional) or 1 tsp"
+                },
+                {
+                    "name": "Thick Pouring Cream",
+                    "quantity": "30ml"
+                },
+                {
+                    "name": "Coffee Beans or Grated Chocolate",
+                    "quantity": "2 coffee beans (or grated chocolate) to garnish"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Pour hot filtered coffee into a cup or glass. Add coffee liqueur, rum, and simple syrup if using (or sugar and mix until dissolved)."
+                },
+                {
+                    "number": 2,
+                    "description": "Using the back of a spoon, carefully decant the cream onto the surface of the drink. Garnish with two coffee beans or a grating of chocolate."
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Pumpkin Spice Latte",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Pumpkin-spiced-latte-7fa2ac4.png?quality=90&webp=true&resize=300,272",
+            "ingredients": [
+                {
+                    "name": "Espresso",
+                    "quantity": "60ml"
+                },
+                {
+                    "name": "Puréed Pumpkin",
+                    "quantity": "2 tsp (from a can)"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Cinnamon or Nutmeg",
+                    "quantity": "To sprinkle"
+                },
+                {
+                    "name": "Cinnamon Stick",
+                    "quantity": "Optional"
+                },
+                {
+                    "name": "Simple Syrup",
+                    "quantity": "60ml water, 30g caster sugar, ½ tsp vanilla extract"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "To make the simple syrup, put the water, sugar, and vanilla extract in a pot and boil until the sugar is dissolved."
+                },
+                {
+                    "number": 2,
+                    "description": "Use 25ml of the syrup and put it in a mug. Add espresso (approx 60ml) using an espresso machine or your preferred method."
+                },
+                {
+                    "number": 3,
+                    "description": "Add the puréed pumpkin into the milk jug with the milk and steam. If you are using a milk frother, you can add it to this too. Just make sure the purée is really smooth."
+                },
+                {
+                    "number": 4,
+                    "description": "Pour your heated textured milk into the espresso and syrup. Dust with cinnamon or nutmeg and garnish with a cinnamon stick across your glass (for extra effect you can singe the ends with a kitchen blow torch if you have one)."
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Iced Latte",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Iced-latte-aee11f3.jpg?quality=90&webp=true&crop=3px,3px,993px,902px&resize=300,272",
+            "description": "Iced Latte, a cool and creamy delight to enjoy,\nSmooth espresso poured over ice, with milk to deploy.\nRefreshingly simple, yet satisfying, a coffee treat to employ.",
+            "ingredients": [
+                {
+                    "name": "Espresso Coffee (1 capsule)",
+                    "quantity": "1"
+                },
+                {
+                    "name": "Brown Sugar",
+                    "quantity": "1 tsp (or to taste)"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "A large splash"
+                },
+                {
+                    "name": "Ice",
+                    "quantity": "Half a glass"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Brew a strong cafetière or espresso coffee and add the sugar while it’s still hot (otherwise the coffee tastes too bitter when cold). Add a big splash of milk, mix and pour over ice in a tall glass. Add a splash of your favourite coffee liqueur if you like."
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Cold Brew Coffee",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2015/06/11443.jpg?quality=90&webp=true&resize=300,272",
+            "description": "Cold Brew Coffee, a smooth and bold creation, patiently brewed,\nGround coffee steeped in cold water, its flavor imbued.\nServed over ice, a refreshing pick-me-up, leaving taste buds renewed.",
+            "ingredients": [
+                {
+                    "name": "Ground Coffee Beans",
+                    "quantity": "50g per 200ml of water"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Use 50g coffee per 200ml of water to begin with and then adjust the ratio until you find the ratio you like."
+                },
+                {
+                    "number": 2,
+                    "description": "Put the grounds into the system you have bought or into the jug. Brew with cold water, or you can bloom the grounds with water just off boiling to help release flavor and then add cold water."
+                },
+                {
+                    "number": 3,
+                    "description": "Allow the grounds to brew for between 8 and 24 hours before filtering."
+                },
+                {
+                    "number": 4,
+                    "description": "Filter either through the system filter or through cloth or paper filters."
+                },
+                {
+                    "number": 5,
+                    "description": "Dilute it with hot or cold water and or milk/cream to the strength you like. Or use it as a base for cocktails or in recipes."
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Café Liégeois",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2019/10/Little-French-Coffee-liegois_9942-720adbe.jpg?quality=90&webp=true&crop=5px,1087px,2527px,1087px&resize=300,272",
+            "description": "Café Liégeois, a French delight with elegance and flair,\nEspresso, ice cream, and whipped cream, a luxurious affair.\nIndulgent and velvety, a treat to savor, beyond compare.",
+            "ingredients": [
+                {
+                    "name": "Ice Cream:",
+                    "quantity": "500ml double cream"
+                },
+                {
+                    "name": "",
+                    "quantity": "325ml whole milk"
+                },
+                {
+                    "name": "",
+                    "quantity": "125ml espresso"
+                },
+                {
+                    "name": "1 vanilla pod, seeds scraped out"
+                },
+                {
+                    "name": "",
+                    "quantity": "200g caster sugar"
+                },
+                {
+                    "name": "",
+                    "quantity": "8 egg yolks"
+                },
+                {
+                    "name": "",
+                    "quantity": "75ml dark rum"
+                },
+                {
+                    "name": "To Serve:",
+                    "quantity": "100ml whipping cream"
+                },
+                {
+                    "name": "",
+                    "quantity": "1 tsp icing sugar"
+                },
+                {
+                    "name": "",
+                    "quantity": "a splash vanilla extract"
+                },
+                {
+                    "name": "Crushed Ice"
+                },
+                {
+                    "name": "1 large cup sweetened black coffee, chilled"
+                },
+                {
+                    "name": "a large pinch cocoa powder"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "To make the ice cream, warm the cream, milk, coffee, and vanilla seeds in a pan until steaming."
+                },
+                {
+                    "number": 2,
+                    "description": "Whisk the sugar and yolks in a bowl or free-standing mixer until pale, then pour over the warmed cream and milk, whisking constantly. Return to the pan then cook slowly over low heat, stirring constantly, until it coats the back of a spoon or reads 82C on a digital thermometer. If it does scramble a little you can strain the mixture through a fine sieve."
+                },
+                {
+                    "number": 3,
+                    "description": "Cool then chill completely before adding the rum. Churn in an ice-cream maker until set then freeze until needed."
+                },
+                {
+                    "number": 4,
+                    "description": "To serve, remove the ice cream from the freezer 5 minutes before serving to soften. Whip the cream with the sugar and vanilla extract until soft peaks. Layer 4 sundae glasses with a spoon of crushed ice and a scoop of ice cream. Repeat this three times. Pour over a generous splash of sweetened coffee, top with the whipped vanilla cream then dust with cocoa."
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Chocolate Affogato",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2023/03/Chocolate-affogato-7d42c59.jpg?quality=90&webp=true&resize=300,272",
+            "description": "Chocolate Affogato, a decadent dessert in coffee's embrace,\nRich chocolate gelato drowned in espresso, a heavenly space.\nThe warmth of coffee melts the cold, creating a divine taste.",
+            "ingredients": [
+                {
+                    "name": "Hot Espresso",
+                    "quantity": "50ml"
+                },
+                {
+                    "name": "Dark Chocolate",
+                    "quantity": "20g"
+                },
+                {
+                    "name": "Good-quality Chocolate Gelato",
+                    "quantity": "2 scoops"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Pour the espresso over the chocolate, stirring until melted. If it significantly cools down the espresso, quickly warm for 5 seconds in the microwave."
+                },
+                {
+                    "number": 2,
+                    "description": "Divide the gelato between espresso cups and pour over the espresso mixture."
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Irish Coffee Cake",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2019/05/Olive_3Ways_IrishCoffeeCake-48251b1.jpg?quality=90&webp=true&crop=13px,2418px,4098px,1763px&resize=300,272",
+            "description": "Irish Coffee Cake, a luscious confection with a spirited twist,\nMoist sponge infused with whiskey and coffee, a flavor list.\nTopped with whipped cream, a delightful treat, to indulge and reminisce.",
+            "ingredients": [
+                {
+                    "name": "Irish Whiskey",
+                    "quantity": "50ml"
+                },
+                {
+                    "name": "Strong Black Coffee",
+                    "quantity": "150ml"
+                },
+                {
+                    "name": "Guinness",
+                    "quantity": "100ml"
+                },
+                {
+                    "name": "Unsalted Butter",
+                    "quantity": "250g, diced, plus extra for the tin"
+                },
+                {
+                    "name": "Cocoa Powder",
+                    "quantity": "75g"
+                },
+                {
+                    "name": "Golden Caster Sugar",
+                    "quantity": "300g"
+                },
+                {
+                    "name": "Soft Light Brown Sugar",
+                    "quantity": "100g"
+                },
+                {
+                    "name": "Eggs",
+                    "quantity": "3 large, whisked"
+                },
+                {
+                    "name": "Buttermilk",
+                    "quantity": "150ml"
+                },
+                {
+                    "name": "Vanilla Extract",
+                    "quantity": "1 tbsp"
+                },
+                {
+                    "name": "Plain Flour",
+                    "quantity": "285g"
+                },
+                {
+                    "name": "Bicarbonate of Soda",
+                    "quantity": "2 tsp"
+                },
+                {
+                    "name": "Whipping Cream",
+                    "quantity": "250ml"
+                },
+                {
+                    "name": "Cocoa Powder (for dusting)",
+                    "quantity": "To dust"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Heat the oven to 180C/fan 160C/gas 4. Butter a deep 23cm cake tin, then line the base and sides with baking paper."
+                },
+                {
+                    "number": 2,
+                    "description": "Pour the whisky, coffee and Guinness into a large pan. Add the butter and heat until melted but not bubbling. Remove from the heat and whisk in the cocoa and sugars. Beat in the eggs, followed by the buttermilk. Finally, add the vanilla, flour and bicarb, and beat again until smooth."
+                },
+                {
+                    "number": 3,
+                    "description": "Pour the cake batter into the tin and bake on a middle shelf in the oven for 50-60 minutes or until a skewer poked into the centre comes out with sticky crumbs. Cool completely in the tin."
+                },
+                {
+                    "number": 4,
+                    "description": "Put all of the topping ingredients, except for the cocoa, into a large bowl and gently whisk until just holding soft peaks. Dollop or spread over the top of the cake after removing from the tin, then dust with a little cocoa, to serve."
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Coffee and Walnut Cake",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2019/02/Coffee-Cake-75d3a6e.jpg?quality=90&webp=true&crop=444px,2029px,5244px,4763px&resize=300,272",
+            "description": "Coffee and Walnut Cake, a classic pairing in confectionary art,\nRich coffee-infused sponge, with crunchy walnuts, a perfect start.\nLayered with creamy frosting, a delightful treat that warms the heart.",
+            "ingredients": [
+                {
+                    "name": "Instant Coffee",
+                    "quantity": "2 tbsp"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "1 tbsp, plus a splash for the icing"
+                },
+                {
+                    "name": "Unsalted Butter",
+                    "quantity": "200g, softened, plus extra for the tin"
+                },
+                {
+                    "name": "Caster Sugar",
+                    "quantity": "200g"
+                },
+                {
+                    "name": "Self-raising Flour",
+                    "quantity": "200g"
+                },
+                {
+                    "name": "Baking Powder",
+                    "quantity": "1 tsp"
+                },
+                {
+                    "name": "Eggs",
+                    "quantity": "4 large"
+                },
+                {
+                    "name": "Dark Chocolate",
+                    "quantity": "75g, roughly chopped"
+                },
+                {
+                    "name": "Mascarpone",
+                    "quantity": "250g"
+                },
+                {
+                    "name": "Icing Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "White Chocolate",
+                    "quantity": "75g, melted"
+                },
+                {
+                    "name": "Walnuts",
+                    "quantity": "50g, finely chopped"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Heat the oven to 180C/fan 160C/gas 4. Butter and base-line two 20cm cake tins with baking paper. Mix together the coffee powder with 1 tbsp boiling water until dissolved, add the milk and mix again."
+                },
+                {
+                    "number": 2,
+                    "description": "Put all the remaining cake ingredients with the coffee mixture in a large bowl and use electric beaters to whisk for 2 minutes until light and fluffy. Divide the mix equally between the prepared tins and bake for 25-30 minutes or until a skewer poked into the centres comes out clean. Cool completely."
+                },
+                {
+                    "number": 3,
+                    "description": "Put the mascarpone in a bowl and sift the icing sugar into it, beating to combine. Pour in the melted chocolate and mix well, adding a splash of milk if it’s too thick to spread."
+                },
+                {
+                    "number": 4,
+                    "description": "To assemble the cake, put one sponge on a serving plate and spread over 1/2 the icing. Sandwich with the second sponge and spread the rest of the icing on top. Finish by sprinkling over the chopped walnuts."
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Affogato Chocolate Mousse",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2018/06/affogato-mousse_charlie-richards-24596d2.jpg?quality=90&webp=true&resize=300,272",
+            "description": "Affogato Chocolate Mousse, a luxurious dessert with a coffee twist,\nVelvety chocolate mousse drowned in espresso, an indulgence amidst.\nA harmonious blend of flavors, a culinary masterpiece to persist.",
+            "ingredients": [
+                {
+                    "name": "Good-quality Espresso",
+                    "quantity": "100ml, plus extra shots to serve"
+                },
+                {
+                    "name": "Ready-made Fresh Custard",
+                    "quantity": "300g"
+                },
+                {
+                    "name": "Dark Chocolate",
+                    "quantity": "150g, chopped"
+                },
+                {
+                    "name": "Egg Whites",
+                    "quantity": "3 large"
+                },
+                {
+                    "name": "Light Muscovado Sugar",
+                    "quantity": "1 tbsp"
+                },
+                {
+                    "name": "Cocoa Powder",
+                    "quantity": "For dusting"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Put the espresso, custard and chopped chocolate in a pan and stir together over a gentle heat. When the chocolate has melted, remove from the heat and scrape into a large mixing bowl to cool."
+                },
+                {
+                    "number": 2,
+                    "description": "Once cool, use another mixing bowl and electric beaters to beat the egg whites to stiff peaks. Add a pinch of salt and the sugar, and beat again for a minute until stiff."
+                },
+                {
+                    "number": 3,
+                    "description": "Stir 1/3 of the beaten egg whites into the custard mixture until no streaks remain, then gently fold in the rest of the egg whites with a large metal spoon. Try to keep in as much air as possible."
+                },
+                {
+                    "number": 4,
+                    "description": "Divide between 4-6 small ramekins or pots, shaking gently to flatten the tops, then chill for at least 4 hours, but preferably overnight. Dust with cocoa when you’re ready to serve – with extra shots of hot espresso on the side."
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Coffee Loaf Cake with Mocha Fudge Frosting",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2015/01/2942.jpg?quality=90&webp=true&crop=2px,353px,596px,253px&resize=300,272",
+            "description": "Coffee Loaf Cake with Mocha Fudge Frosting, a delightful treat to savor,\nMoist coffee-infused cake, topped with rich mocha fudge, a flavor to favor.\nEach bite a symphony of coffee and chocolate, a culinary endeavor.",
+            "ingredients": [
+                {
+                    "name": "Butter",
+                    "quantity": "200g"
+                },
+                {
+                    "name": "Golden Caster Sugar",
+                    "quantity": "175g"
+                },
+                {
+                    "name": "Eggs",
+                    "quantity": "3"
+                },
+                {
+                    "name": "Self-raising Flour",
+                    "quantity": "300g"
+                },
+                {
+                    "name": "Baking Powder",
+                    "quantity": "1/2 tsp"
+                },
+                {
+                    "name": "Instant Coffee",
+                    "quantity": "1 tbsp dissolved in 3 tbsp milk"
+                },
+                {
+                    "name": "Milk",
+                    "quantity": "100ml (for frosting)"
+                },
+                {
+                    "name": "Dark Chocolate",
+                    "quantity": "50g, chopped (for frosting)"
+                },
+                {
+                    "name": "Golden Caster Sugar",
+                    "quantity": "200g (for frosting)"
+                },
+                {
+                    "name": "Butter",
+                    "quantity": "1 tbsp (for frosting)"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Heat the oven to 160C/fan140C/gas 3."
+                },
+                {
+                    "number": 2,
+                    "description": "Beat the butter and sugar with an electric mixer until light and creamy. Gradually beat in the eggs. Fold in the flour and baking powder followed by the milk. Spoon into a loaf tin lined with baking parchment, making sure the parchment will enclose the cake and stick up above the tin a little."
+                },
+                {
+                    "number": 3,
+                    "description": "Bake for 55-60 minutes or until cooked when tested with a skewer. Cool in the tin for 5 minutes and then on a rack."
+                },
+                {
+                    "number": 4,
+                    "description": "Make the frosting by melting 1 tsp butter in a saucepan and then adding the milk, coffee and sugar and bringing the lot to the boil. Boil for 10 minutes, stirring occasionally so the mixture doesn’t catch."
+                },
+                {
+                    "number": 5,
+                    "description": "Take off the heat, stir in the remaining butter and the chocolate, then cool a little until it starts to thicken. Pour onto the top of the cake before the mixture starts to set."
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Vanilla Panna Cotta with Espresso Swirl",
+            "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2014/12/1728.jpg?quality=90&webp=true&resize=300,272",
+            "description": "Vanilla Panna Cotta with Espresso Swirl, a sophisticated dessert to behold,\nCreamy vanilla-infused custard, adorned with espresso swirls, bold.\nA marriage of smoothness and richness, a culinary story untold.",
+            "ingredients": [
+                {
+                    "name": "Sunflower Oil",
+                    "quantity": "for brushing"
+                },
+                {
+                    "name": "Full-Fat Milk",
+                    "quantity": "375ml"
+                },
+                {
+                    "name": "Double Cream",
+                    "quantity": "375ml"
+                },
+                {
+                    "name": "Vanilla Pod",
+                    "quantity": "½"
+                },
+                {
+                    "name": "Golden Caster Sugar",
+                    "quantity": "100g"
+                },
+                {
+                    "name": "Powdered Gelatine",
+                    "quantity": "2 tsp"
+                },
+                {
+                    "name": "Soft Light Brown Sugar",
+                    "quantity": "3 tbsp"
+                },
+                {
+                    "name": "Instant Espresso Coffee Powder",
+                    "quantity": "2 tsp"
+                }
+            ],
+            "steps": [
+                {
+                    "number": 1,
+                    "description": "Brush 10 small glasses or moulds with a little oil."
+                },
+                {
+                    "number": 2,
+                    "description": "To make the vanilla panna cotta, put the milk and cream in a saucepan. Add the vanilla pod and sugar. Bring slowly to the boil, then remove from the heat."
+                },
+                {
+                    "number": 3,
+                    "description": "Sprinkle the gelatine over and stir until the gelatine has completely dissolved. Leave to cool and infuse with the vanilla. Strain through a fine sieve into the pudding moulds. Leave until cold and starting to thicken (this will take about 45 minutes in the fridge)."
+                },
+                {
+                    "number": 4,
+                    "description": "To make the espresso swirl, put the sugar into a small pan, add 250ml water and bring to the boil. Continue to boil until the syrup has reduced by half. Remove from the heat, add the espresso powder and gelatine and stir until the gelatine has dissolved."
+                },
+                {
+                    "number": 5,
+                    "description": "When the vanilla mix has thickened, remove from the fridge and drizzle the espresso syrup into each mould. Then swirl the two mixes together using the handle of a teaspoon. Chill for 2 hours or until set."
+                },
+                {
+                    "number": 6,
+                    "description": "Quickly dip the moulds into a bowl of hot water and turn out onto serving plates or serve them in their glasses."
+                }
+            ]
+        }
+    ]
+}
