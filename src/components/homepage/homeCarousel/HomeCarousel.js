@@ -2,9 +2,9 @@ import React from "react";
 import { HomeCarouselCard } from "./HomeCarouselCard";
 
 export const HomeCarousel = () => {
-    const filler = [1,2,3,4,5,6,76,78,8,8,9,9];
+    const filler = [1,2,3,4];
   return (
-    <div className="row" style={{margin: "80px 180px"}}>
+    <div className="row" style={{margin: "50px 200px"}}>
       {filler.map((note, index) => (
         <div key={index} className="col mb-4 d-flex justify-content-center">
           <HomeCarouselCard/>

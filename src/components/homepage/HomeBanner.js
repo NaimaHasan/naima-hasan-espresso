@@ -13,7 +13,7 @@ export const HomeBanner = () => {
         <h3>Espresso</h3>
         <div className="route-options">
           {routeNames.map((x, i) => (
-            <div style={{ paddingLeft: "40px" }}>
+            <div style={{ paddingLeft: "40px"}}>
               <h5>{x}</h5>
             </div>
           ))}

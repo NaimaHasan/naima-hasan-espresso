@@ -16,7 +16,7 @@ export const HomeCarouselCard = () => {
   return (
     <div>
       <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
-        <Image src={heroImage} className="carousel-card-image" />
+        <Image src={heroImage} className="carousel-card-image" rounded/>
         <div className="carousel-card-heart">
           {isHeartFilled ? (
             <HeartFill

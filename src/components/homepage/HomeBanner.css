@@ -26,9 +26,11 @@
 .route-options {
     display: flex;
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
-.hero-welcome{
+.hero-welcome {
     position: absolute;
     top: 250px;
     left: 150px;
