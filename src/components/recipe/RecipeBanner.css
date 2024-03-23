@@ -1,0 +1,43 @@
+.recipe-image {
+    object-fit: cover;
+    width: 100%;
+    height: 32rem;
+}
+
+.recipe-card {
+    position: relative;
+    top: 200px;
+    left: 220px;
+    width: 30rem;
+    margin-bottom: 40px;
+    padding: 10px 10px;
+}
+
+.recipe-heart {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+
+}
+
+.recipe-name {
+    position: absolute;
+    top: 220px;
+    left: 820px;
+    color: #575040;
+    text-align: left;
+    font-size: 42px;
+}
+
+.recipe-quote{
+    position: absolute;
+    top: 320px;
+    left: 820px;
+    color: #575040;
+    font-style: italic;
+}

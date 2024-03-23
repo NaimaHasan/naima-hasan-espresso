@@ -1,0 +1,20 @@
+.carousel-container {
+    position: relative;
+    
+  }
+  
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:  #e0d9c7;
+  }
+  
+  .left-arrow {
+    left: -20px;
+  }
+  
+  .right-arrow {
+    right: -20px; /* Adjust this value to shift the right arrow */
+  }
+  

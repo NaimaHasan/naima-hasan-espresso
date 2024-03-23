@@ -1,0 +1,33 @@
+
+.topbar {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 90px;
+    color: white;
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 200px;
+    margin-left: 80px;
+    color: white;
+}
+
+.route-options {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #ccc;
+}

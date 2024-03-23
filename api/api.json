@@ -400,6 +400,7 @@
             "name": "Pumpkin Spice Latte",
             "category": "Hot coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Pumpkin-spiced-latte-7fa2ac4.png?quality=90&webp=true&resize=300,272",
+            "description": "Pumpkin Spice Latte, an autumnal delight crafted with care,\nBlends aromatic espresso with pumpkin spice, a flavor so rare.\nSteamed milk and frothy foam unite, a symphony beyond compare",
             "ingredients": [
                 {
                     "name": "Espresso",
