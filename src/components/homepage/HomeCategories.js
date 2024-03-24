@@ -13,7 +13,7 @@ export const HomeCategories = () => {
         <div key={key}>
           <IconComponent size={40} className="category-icon" />
           <br />
-          <div style={{fontSize: "13px"}}>{key}</div>
+          <div style={{fontSize: "13px", textAlign: "center"}}>{key}</div>
         </div>
       ))}
     </div>

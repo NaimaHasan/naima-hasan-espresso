@@ -23,3 +23,13 @@
     width: 100%;
     height: 21rem;
 }
+
+.gradient-overlay {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%; 
+    height: 21rem;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)); 
+    margin: 5px 5px;
+  }

@@ -1,0 +1,33 @@
+.step-container {
+    margin: 50px 140px;
+}
+
+.step-heading {
+    color: #575040;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.steps-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.step-card {
+    text-align: center;
+    margin: 50px 150px;
+}
+
+.step-text {
+    color: #575040;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: start;
+    margin: 15px 150px;
+display: flex;
+
+}

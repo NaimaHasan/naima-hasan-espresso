@@ -36,6 +36,7 @@ export const HomeCarouselCard = () => {
             />
           )}
         </div>
+        <div className="gradient-overlay"></div>
         <Card.Body>Title</Card.Body>
       </Card>
     </div>

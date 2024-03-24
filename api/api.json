@@ -192,7 +192,7 @@
                     "quantity": "100ml"
                 },
                 {
-                    "name": "Espresso (hot and freshly made)",
+                    "name": "Espresso",
                     "quantity": "50ml"
                 },
                 {
@@ -454,8 +454,8 @@
             "description": "Iced Latte, a cool and creamy delight to enjoy,\nSmooth espresso poured over ice, with milk to deploy.\nRefreshingly simple, yet satisfying, a coffee treat to employ.",
             "ingredients": [
                 {
-                    "name": "Espresso Coffee (1 capsule)",
-                    "quantity": "1"
+                    "name": "Espresso Coffee",
+                    "quantity": "1 capsule"
                 },
                 {
                     "name": "Brown Sugar",
@@ -524,48 +524,51 @@
                     "quantity": "500ml double cream"
                 },
                 {
-                    "name": "",
-                    "quantity": "325ml whole milk"
+                    "name": "Whole Milk",
+                    "quantity": "325ml"
                 },
                 {
-                    "name": "",
-                    "quantity": "125ml espresso"
+                    "name": "Espresso",
+                    "quantity": "125ml"
                 },
                 {
-                    "name": "1 vanilla pod, seeds scraped out"
+                    "name": "Vanilla Pod, seeds scraped out",
+                    "quantity": "1"
                 },
                 {
-                    "name": "",
-                    "quantity": "200g caster sugar"
+                    "name": "Caster Sugar",
+                    "quantity": "200g"
                 },
                 {
-                    "name": "",
-                    "quantity": "8 egg yolks"
+                    "name": "Egg Yolks",
+                    "quantity": "8"
                 },
                 {
-                    "name": "",
-                    "quantity": "75ml dark rum"
+                    "name": "Dark Rum",
+                    "quantity": "75ml"
                 },
                 {
-                    "name": "To Serve:",
-                    "quantity": "100ml whipping cream"
+                    "name": "Whipping Cream",
+                    "quantity": "100ml"
                 },
                 {
-                    "name": "",
-                    "quantity": "1 tsp icing sugar"
+                    "name": "Icing Sugar",
+                    "quantity": "1 tsp "
                 },
                 {
-                    "name": "",
-                    "quantity": "a splash vanilla extract"
+                    "name": "Vanilla Extract",
+                    "quantity": "A splash"
                 },
                 {
                     "name": "Crushed Ice"
                 },
                 {
-                    "name": "1 large cup sweetened black coffee, chilled"
+                    "name": "Sweetened Black Coffee, Chilled",
+                    "quantity": "1 large cup"
                 },
                 {
-                    "name": "a large pinch cocoa powder"
+                    "name": "Cocoa Powder",
+                    "quantity": "A large pinch"
                 }
             ],
             "steps": [
@@ -678,7 +681,7 @@
                     "quantity": "250ml"
                 },
                 {
-                    "name": "Cocoa Powder (for dusting)",
+                    "name": "Cocoa Powder",
                     "quantity": "To dust"
                 }
             ],
@@ -792,7 +795,7 @@
                     "quantity": "300g"
                 },
                 {
-                    "name": "Dark Chocolate",
+                    "name": "Dark Chocolate (chopped)",
                     "quantity": "150g, chopped"
                 },
                 {
