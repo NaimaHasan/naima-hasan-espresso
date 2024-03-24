@@ -3,6 +3,7 @@ import { CheckSquareFill, HeartFill, Square } from "react-bootstrap-icons";
 import "./RecipeSteps.css";
 import { Card } from "react-bootstrap";
 import { CheckSquare } from "react-bootstrap-icons";
+import { Container, Row, Col } from "react-bootstrap";
 
 export const RecipeSteps = () => {
   const steps = [
@@ -20,37 +21,44 @@ export const RecipeSteps = () => {
     setIsHeartFilled(!isHeartFilled);
   };
   return (
-    <div className="step-container">
-      {/* <hr /> */}
-      <Card className="step-card">
-        <div className="step-heading">Steps</div>
-        <div className="step-wrapper">
-          {steps.map((value, index) => (
-            <div key={index} className="step-text">
-              <div style={{ marginRight: "14px"}}>
-              {isHeartFilled ? (
-                <CheckSquareFill
-                  size="18px"
-                  className={isHeartFilled ? "icon-hover" : ""}
-                  style={{ color: "#575040"}}
-                  onClick={handleHeartClick}
-                />
-              ) : (
-                <Square
-                  size="18px"
-                  className={isHoveredHeart ? "icon-hover" : ""}
-                  style={{ color: isHoveredHeart ? "#575040" : "black" }}
-                  onMouseEnter={() => setIsHoveredHeart(true)}
-                  onMouseLeave={() => setIsHoveredHeart(false)}
-                  onClick={handleHeartClick}
-                />
-              )}
+    <Container>
+      <Row>
+        <Col xs={12} md={12} xl={12} className="d-flex flex-column">
+          <div className="step-container">
+            <Card className="step-card">
+              <div className="step-heading">Steps</div>
+              <div className="step-wrapper">
+                {steps.map((value, index) => (
+                  <div key={index} className="step-text">
+                    <div style={{ marginRight: "14px" }}>
+                      {isHeartFilled ? (
+                        <CheckSquareFill
+                          size="18px"
+                          className={isHeartFilled ? "icon-hover" : ""}
+                          style={{ color: "#575040" }}
+                          onClick={handleHeartClick}
+                        />
+                      ) : (
+                        <Square
+                          size="18px"
+                          className={isHoveredHeart ? "icon-hover" : ""}
+                          style={{
+                            color: isHoveredHeart ? "#575040" : "black",
+                          }}
+                          onMouseEnter={() => setIsHoveredHeart(true)}
+                          onMouseLeave={() => setIsHoveredHeart(false)}
+                          onClick={handleHeartClick}
+                        />
+                      )}
+                    </div>
+                    {value}
+                  </div>
+                ))}
               </div>
-              {value}
-            </div>
-          ))}
-        </div>
-      </Card>
-    </div>
+            </Card>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
