@@ -17,11 +17,11 @@ export const HomeCarouselCard = ({ id, title, imageUrl }) => {
   return (
     <div>
       <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
-        <Link to={"/recipe"} style={{ textDecoration: "none", color: "black" }}>
+        <Link to={"/recipe/"+id} style={{ textDecoration: "none", color: "black" }}>
           <div>
             <Image src={imageUrl} className="carousel-card-image" rounded />
             <div className="gradient-overlay"></div>
-            <Card.Body>{title}</Card.Body>
+            <Card.Body className="carousel-card-title">{title}</Card.Body>
           </div>
         </Link>
         <div className="carousel-card-heart">

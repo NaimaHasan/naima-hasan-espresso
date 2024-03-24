@@ -24,6 +24,12 @@
     height: 21rem;
 }
 
+.carousel-card-title {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+  }
+
 .gradient-overlay {
     position: absolute;
     right: 0;

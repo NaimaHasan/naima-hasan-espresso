@@ -6,19 +6,19 @@ import Image from "react-bootstrap/Image";
 import heroImage from "../../assets/homepage/hero.jpg";
 import "./RecipeBanner.css";
 
-export const RecipeBanner = () => {
+export const RecipeBanner = ({title, id, category, description, imageUrl, ingredients}) => {
   const [isHoveredHeart, setIsHoveredHeart] = useState(false);
   const [isHeartFilled, setIsHeartFilled] = useState(false);
-  const ingredients = {
-    "Sunflower Oil": "for brushing",
-    "Full-Fat Milk": "375ml",
-    "Double Cream": "375ml",
-    "Vanilla Pod": "½",
-    "Golden Caster Sugar": "100g",
-    "Powdered Gelatine": "2 tsp",
-    "Soft Light Brown Sugar": "3 tbsp",
-    "Instant Espresso Coffee Powder": "2 tsp",
-  };
+  // const ingredients = {
+  //   "Sunflower Oil": "for brushing",
+  //   "Full-Fat Milk": "375ml",
+  //   "Double Cream": "375ml",
+  //   "Vanilla Pod": "½",
+  //   "Golden Caster Sugar": "100g",
+  //   "Powdered Gelatine": "2 tsp",
+  //   "Soft Light Brown Sugar": "3 tbsp",
+  //   "Instant Espresso Coffee Powder": "2 tsp",
+  // };
 
   const handleHeartClick = () => {
     setIsHeartFilled(!isHeartFilled);
@@ -28,7 +28,7 @@ export const RecipeBanner = () => {
       <Row>
         <Col xs={12} md={6} xl={5} className="d-flex flex-column">
           <Card className="recipe-card">
-            <Image src={heroImage} className="recipe-image" />
+            <Image src={imageUrl} className="recipe-image" />
             <div className="recipe-heart">
               {isHeartFilled ? (
                 <HeartFill
@@ -49,33 +49,29 @@ export const RecipeBanner = () => {
               )}
             </div>
             <Card.Body className="recipe-category">
-              Category: Hot Coffee
+              Category: {category}
             </Card.Body>
           </Card>
         </Col>
         <Col xs={11} md={6} xl={6} className="d-flex flex-column">
-          <div className="recipe-name">Cappuccino</div>
+          <div className="recipe-name">{title}</div>
           <div className="recipe-quote">
-            "Cappuccino, a classic Italian coffee creation, <br />
-            Combines espresso, steamed milk, and frothy foam in harmonious
-            relation. <br />
-            Its rich flavor and creamy texture delight the senses with each
-            sip's invitation."
+            {description}
           </div>
           <div className="recipe-ingredients-heading">Ingredients</div>
           <div className="recipe-ingredients-list">
-            {Object.entries(ingredients).map(([key, value]) => (
+            {ingredients.map((ingredient) => (
               <div
-                key={key}
+                key={ingredient.name}
                 style={{
                   display: "flex",
                   alignItems: "center",
                   marginRight: "20px",
                 }}
               >
-                <Dot size="44px" />
+                <Dot size="44px" style={{flex: "0 0 auto"}}/>
                 <span>
-                  {key}: {value}
+                  {ingredient.name}: {ingredient.quantity} {ingredient.optional ? "(optional)" : ""}
                 </span>
               </div>
             ))}

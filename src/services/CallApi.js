@@ -14,3 +14,14 @@ export const getRecipes = async (data) => {
     throw error;
   }
 };
+
+export const getRecipeById = async (id) => {
+    try {
+      const response = await getRecipes();
+      return response.filter((x) => {
+        return x["id"] === id;
+      })[0];
+    } catch (error) {
+      throw error;
+    }
+  };
