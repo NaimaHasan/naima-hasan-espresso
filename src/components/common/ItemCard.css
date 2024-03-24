@@ -1,0 +1,29 @@
+.item-image {
+    object-fit: cover;
+    width: 100%;
+    height: 25rem;
+}
+
+.item-card {
+    width: 25rem;
+    margin:20px;
+    padding: 10px 10px;
+}
+
+.item-heart {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    display: flex;
+    z-index: 1000;
+    cursor: pointer;
+
+}
+
+.item-name {
+    font-size: 22px;
+    text-align: right;
+    color: #575040;
+    font-weight: 300;
+
+}
