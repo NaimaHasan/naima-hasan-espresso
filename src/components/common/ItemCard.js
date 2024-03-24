@@ -16,31 +16,31 @@ export const ItemCard = () => {
 
   return (
     <div>
-      <Link to={"/recipe"}  style={{textDecoration: "none"}}>
-        <Card className="item-card">
+      <Card className="item-card">
+        <Link to={"/recipe"} style={{ textDecoration: "none", color: "#575040" }}>
           <Image src={heroImage} className="item-image" />
-          <div className="item-heart">
-            {isHeartFilled ? (
-              <HeartFill
-                size="22px"
-                className={isHeartFilled ? "icon-hover" : ""}
-                style={{ color: "red" }}
-                onClick={handleHeartClick}
-              />
-            ) : (
-              <Heart
-                size="22px"
-                className={isHoveredHeart ? "icon-hover" : ""}
-                style={{ color: isHoveredHeart ? "red" : "black" }}
-                onMouseEnter={() => setIsHoveredHeart(true)}
-                onMouseLeave={() => setIsHoveredHeart(false)}
-                onClick={handleHeartClick}
-              />
-            )}
-          </div>
           <Card.Body className="item-name">Cappucino</Card.Body>
-        </Card>
-      </Link>
+        </Link>
+        <div className="item-heart">
+          {isHeartFilled ? (
+            <HeartFill
+              size="22px"
+              className={isHeartFilled ? "icon-hover" : ""}
+              style={{ color: "red" }}
+              onClick={handleHeartClick}
+            />
+          ) : (
+            <Heart
+              size="22px"
+              className={isHoveredHeart ? "icon-hover" : ""}
+              style={{ color: isHoveredHeart ? "red" : "black" }}
+              onMouseEnter={() => setIsHoveredHeart(true)}
+              onMouseLeave={() => setIsHoveredHeart(false)}
+              onClick={handleHeartClick}
+            />
+          )}
+        </div>
+      </Card>
     </div>
   );
 };

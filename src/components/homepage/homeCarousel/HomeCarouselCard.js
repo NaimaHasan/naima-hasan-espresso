@@ -16,32 +16,34 @@ export const HomeCarouselCard = () => {
 
   return (
     <div>
-      <Link to={"/recipe"}  style={{textDecoration: "none"}}>
-        <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
-          <Image src={heroImage} className="carousel-card-image" rounded />
-          <div className="carousel-card-heart">
-            {isHeartFilled ? (
-              <HeartFill
-                size="18px"
-                className={isHeartFilled ? "icon-hover" : ""}
-                style={{ color: "red" }}
-                onClick={handleHeartClick}
-              />
-            ) : (
-              <Heart
-                size="18px"
-                className={isHoveredHeart ? "icon-hover" : ""}
-                style={{ color: isHoveredHeart ? "red" : "white" }}
-                onMouseEnter={() => setIsHoveredHeart(true)}
-                onMouseLeave={() => setIsHoveredHeart(false)}
-                onClick={handleHeartClick}
-              />
-            )}
+      <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
+        <Link to={"/recipe"} style={{ textDecoration: "none", color: "black" }}>
+          <div>
+            <Image src={heroImage} className="carousel-card-image" rounded />
+            <div className="gradient-overlay"></div>
+            <Card.Body>Title</Card.Body>
           </div>
-          <div className="gradient-overlay"></div>
-          <Card.Body>Title</Card.Body>
-        </Card>
-      </Link>
+        </Link>
+        <div className="carousel-card-heart">
+          {isHeartFilled ? (
+            <HeartFill
+              size="18px"
+              className={isHeartFilled ? "icon-hover" : ""}
+              style={{ color: "red" }}
+              onClick={handleHeartClick}
+            />
+          ) : (
+            <Heart
+              size="18px"
+              className={isHoveredHeart ? "icon-hover" : ""}
+              style={{ color: isHoveredHeart ? "red" : "white" }}
+              onMouseEnter={() => setIsHoveredHeart(true)}
+              onMouseLeave={() => setIsHoveredHeart(false)}
+              onClick={handleHeartClick}
+            />
+          )}
+        </div>
+      </Card>
     </div>
   );
 };
