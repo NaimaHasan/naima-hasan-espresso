@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { CheckSquareFill, HeartFill, Square } from "react-bootstrap-icons";
 import "./RecipeSteps.css";
 import { Card } from "react-bootstrap";
-import { CheckSquare } from "react-bootstrap-icons";
 import { Container, Row, Col } from "react-bootstrap";
 
 export const RecipeSteps = ({steps}) => {
