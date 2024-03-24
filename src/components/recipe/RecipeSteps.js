@@ -21,7 +21,7 @@ export const RecipeSteps = () => {
   };
   return (
     <div className="step-container">
-      <hr />
+      {/* <hr /> */}
       <Card className="step-card">
         <div className="step-heading">Steps</div>
         <div className="step-wrapper">

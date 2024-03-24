@@ -53,7 +53,7 @@ export const RecipeBanner = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={11} md={6} xl={7} className="d-flex flex-column">
+        <Col xs={11} md={6} xl={6} className="d-flex flex-column">
           <div className="recipe-name">Cappuccino</div>
           <div className="recipe-quote">
             "Cappuccino, a classic Italian coffee creation, <br />

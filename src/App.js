@@ -6,9 +6,9 @@ import { Recipe } from './pages/Recipe';
 function App() {
   return (
     <div>
-      {/* <Recipe/> */}
+      <Recipe/>
       {/* <Home/> */}
-      <Favorite/>
+      {/* <Favorite/> */}
     </div>
   );
 }

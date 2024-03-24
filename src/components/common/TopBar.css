@@ -1,6 +1,6 @@
 
 .topbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0px;
     height: 90px;
@@ -10,6 +10,7 @@
     padding-right: 80px;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .searchbar {
