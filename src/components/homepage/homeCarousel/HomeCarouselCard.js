@@ -6,7 +6,7 @@ import heroImage from "../../../assets/homepage/hero.jpg";
 import "./HomeCarouselCard.css";
 import { Link } from "react-router-dom";
 
-export const HomeCarouselCard = () => {
+export const HomeCarouselCard = ({ id, title, imageUrl }) => {
   const [isHoveredHeart, setIsHoveredHeart] = useState(false);
   const [isHeartFilled, setIsHeartFilled] = useState(false);
 
@@ -19,9 +19,9 @@ export const HomeCarouselCard = () => {
       <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
         <Link to={"/recipe"} style={{ textDecoration: "none", color: "black" }}>
           <div>
-            <Image src={heroImage} className="carousel-card-image" rounded />
+            <Image src={imageUrl} className="carousel-card-image" rounded />
             <div className="gradient-overlay"></div>
-            <Card.Body>Title</Card.Body>
+            <Card.Body>{title}</Card.Body>
           </div>
         </Link>
         <div className="carousel-card-heart">

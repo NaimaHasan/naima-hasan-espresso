@@ -9,12 +9,7 @@ export const Home = () => {
       <HomeBanner />
       <HomeCategories />
       <div style={{ color: "#575040", paddingTop: "60px", paddingBottom: "20px", textAlign: "center"}}>
-        <h3>Your Favorites</h3>
-      </div>
-      <HomeCarousel />
-
-      <div style={{ color: "#575040", paddingBottom: "20px", textAlign: "center"}}>
-        <h3>Random Recipes</h3>
+        <h3>Random Recipe</h3>
       </div>
       <HomeCarousel />
     </div>

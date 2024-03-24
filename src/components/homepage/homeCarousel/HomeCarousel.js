@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getRecipes } from "../../../services/CallApi";
 import { HomeCarouselCard } from "./HomeCarouselCard";
 import "./HomeCarousel.css";
-import {  ArrowLeftCircleFill, ArrowRightCircleFill } from "react-bootstrap-icons";
+import {
+  ArrowLeftCircleFill,
+  ArrowRightCircleFill,
+} from "react-bootstrap-icons";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const HomeCarousel = () => {
-  const filler = [1, 2, 3, 4, 4, 4, 4, 4];
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    getRecipes()
+      .then((data) => {
+        setRecipes(data);
+      })
+      .catch((error) => {
+        console.error("Failed to fetch recipes:", error);
+      });
+  }, []);
 
   const responsive = {
     desktop: {
@@ -33,13 +47,23 @@ export const HomeCarousel = () => {
         responsive={responsive}
         infinite={true}
         renderButtonGroupOutside={true}
-        customLeftArrow={<ArrowLeftCircleFill size="40px" className="custom-arrow left-arrow"/>}
-        customRightArrow={<ArrowRightCircleFill size="40px" className="custom-arrow right-arrow" />}
+        customLeftArrow={
+          <ArrowLeftCircleFill
+            size="40px"
+            className="custom-arrow left-arrow"
+          />
+        }
+        customRightArrow={
+          <ArrowRightCircleFill
+            size="40px"
+            className="custom-arrow right-arrow"
+          />
+        }
         itemClass="carousel-item-padding-40-px"
       >
-        {filler.map((note, index) => (
+        {recipes.map((recipe, index) => (
           <div key={index} className="col mb-4 d-flex justify-content-center">
-            <HomeCarouselCard />
+            <HomeCarouselCard title={recipe["name"]} id={recipe["id"]} imageUrl={recipe["image-url"]}/>
           </div>
         ))}
       </Carousel>
