@@ -16,7 +16,7 @@ export const HomeCarouselCard = () => {
 
   return (
     <div>
-      <Link to={"/recipe"}>
+      <Link to={"/recipe"}  style={{textDecoration: "none"}}>
         <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
           <Image src={heroImage} className="carousel-card-image" rounded />
           <div className="carousel-card-heart">

@@ -32,6 +32,7 @@ export const HomeCarousel = () => {
         draggable={true}
         responsive={responsive}
         infinite={true}
+        renderButtonGroupOutside={true}
         customLeftArrow={<ArrowLeftCircleFill size="40px" className="custom-arrow left-arrow"/>}
         customRightArrow={<ArrowRightCircleFill size="40px" className="custom-arrow right-arrow" />}
         itemClass="carousel-item-padding-40-px"
