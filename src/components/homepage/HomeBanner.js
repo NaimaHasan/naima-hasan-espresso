@@ -3,6 +3,7 @@ import Image from "react-bootstrap/Image";
 import heroImage from "../../assets/homepage/hero.jpg";
 import "./HomeBanner.css";
 import { Search } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 export const HomeBanner = () => {
   const routeNames = ["Home", "Favorites"];
@@ -14,7 +15,7 @@ export const HomeBanner = () => {
         <div className="route-options">
           {routeNames.map((x, i) => (
             <div style={{ paddingLeft: "40px"}}>
-              <h5>{x}</h5>
+              <Link to={x === "Home" ? "/" : "/favorite"} style={{textDecoration: "none", color: "white"}}><h5>{x}</h5></Link>
             </div>
           ))}
 
