@@ -6,7 +6,7 @@ import heroImage from "../../assets/homepage/hero.jpg";
 import { Link } from "react-router-dom";
 import "./ItemCard.css";
 
-export const ItemCard = () => {
+export const ItemCard = ({ id, title, imageUrl }) => {
   const [isHoveredHeart, setIsHoveredHeart] = useState(false);
   const [isHeartFilled, setIsHeartFilled] = useState(false);
 
@@ -17,9 +17,12 @@ export const ItemCard = () => {
   return (
     <div>
       <Card className="item-card">
-        <Link to={"/recipe"} style={{ textDecoration: "none", color: "#575040" }}>
-          <Image src={heroImage} className="item-image" />
-          <Card.Body className="item-name">Cappucino</Card.Body>
+        <Link
+          to={"/recipe/"+id}
+          style={{ textDecoration: "none", color: "#575040" }}
+        >
+          <Image src={imageUrl} className="item-image" />
+          <Card.Body className="item-name">{title}</Card.Body>
         </Link>
         <div className="item-heart">
           {isHeartFilled ? (

@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Cappuccino",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/cappuccino-6b1f5c9.png?quality=90&webp=true&resize=300,272",
             "description": "Cappuccino, a classic Italian coffee creation,\nCombines espresso, steamed milk, and frothy foam in harmonious relation.\nIts rich flavor and creamy texture delight the senses with each sip's invitation.",
             "ingredients": [
@@ -39,7 +39,7 @@
         {
             "id": 2,
             "name": "Flat White",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Flat-White-d195a5f.png?quality=90&webp=true&resize=975,649",
             "description": "Flat White, an Aussie-born coffee delight,\nBlending velvety microfoam with bold espresso in perfect sight.\nSmooth and creamy, it offers a refined taste, satisfying day or night.",
             "ingredients": [
@@ -70,7 +70,7 @@
         {
             "id": 3,
             "name": "Macchiato",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Macchiato-4cea4fd.png?quality=90&webp=true&resize=300,272",
             "description": "Macchiato, an espresso kissed by a touch of milk,\nBold and robust, yet with a hint of silk.\nIts contrast of flavors creates a symphony, a brewer's skilled ilk.",
             "ingredients": [
@@ -101,7 +101,7 @@
         {
             "id": 4,
             "name": "Mocha",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png?quality=90&webp=true&resize=300,272",
             "description": "Mocha, a decadent fusion of chocolate and espresso divine,\nVelvety richness with every sip, a true indulgent sign.\nA harmonious blend of flavors, a sensation that intertwine.",
             "ingredients": [
@@ -140,7 +140,7 @@
         {
             "id": 5,
             "name": "Dalgona",
-            "category": "Cold coffee",
+            "category": "Cold Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Dalgona-0b6cd4a.png?quality=90&webp=true&resize=300,272",
             "description": "Dalgona, a frothy Korean delight, crafted with care,\nWhipped instant coffee, sugar, and water, a fluffy affair.\nServed atop cold milk, a sweet sensation to share.",
             "ingredients": [
@@ -179,7 +179,7 @@
         {
             "id": 6,
             "name": "Eggnog Latte",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2022/10/eggnog-latte-10a8b5f.jpg?quality=90&webp=true&resize=300,272",
             "description": "Eggnog Latte, a festive brew to warm the soul,\nRich espresso meets creamy eggnog, creating a holiday goal.\nSpiced with nutmeg, a seasonal delight, bringing joy in every bowl.",
             "ingredients": [
@@ -210,7 +210,7 @@
         {
             "id": 7,
             "name": "Gingerbread Latte",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Gingerbread-latte-bb14962.png?quality=90&webp=true&resize=300,272",
             "description": "Gingerbread Latte, a seasonal treat with a spicy twist,\nEspresso and steamed milk mingle with gingerbread syrup, a bliss.\nTopped with whipped cream and a sprinkle of spice, it's holiday joy you can't resist.",
             "ingredients": [
@@ -269,7 +269,7 @@
         {
             "id": 8,
             "name": "Baileys Coffee",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Baileys-coffee-4287249.png?quality=90&webp=true&resize=300,272",
             "description": "Baileys Coffee, a luxurious blend for those who dare,\nIrish cream liqueur meets rich espresso with care.\nA decadent indulgence, warming hearts with each sip's flare.",
             "ingredients": [
@@ -316,7 +316,7 @@
         {
             "id": 9,
             "name": "Caramel Iced Coffee",
-            "category": "Cold coffee",
+            "category": "Cold Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Caramel-iced-coffee-f73307b.png?quality=90&webp=true&resize=300,272",
             "description": "Caramel Iced Coffee, a refreshing summer treat,\nCold brew coffee poured over ice, with caramel syrup sweet.\nCreamy and cool, it's a delightful sip to beat the heat.",
             "ingredients": [
@@ -355,7 +355,7 @@
         {
             "id": 10,
             "name": "Calypso Coffee",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/calypso-coffee-1d2d4ea.png?quality=90&webp=true&resize=300,272",
             "description": "Calypso Coffee, a tropical escape in a cup,\nDark rum and coffee, topped with whipped cream, a joyous pickup.\nHints of cinnamon and nutmeg dance, flavor harmony to sup.",
             "ingredients": [
@@ -398,7 +398,7 @@
         {
             "id": 11,
             "name": "Pumpkin Spice Latte",
-            "category": "Hot coffee",
+            "category": "Hot Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Pumpkin-spiced-latte-7fa2ac4.png?quality=90&webp=true&resize=300,272",
             "description": "Pumpkin Spice Latte, an autumnal delight crafted with care,\nBlends aromatic espresso with pumpkin spice, a flavor so rare.\nSteamed milk and frothy foam unite, a symphony beyond compare",
             "ingredients": [
@@ -449,7 +449,7 @@
         {
             "id": 12,
             "name": "Iced Latte",
-            "category": "Cold coffee",
+            "category": "Cold Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Iced-latte-aee11f3.jpg?quality=90&webp=true&crop=3px,3px,993px,902px&resize=300,272",
             "description": "Iced Latte, a cool and creamy delight to enjoy,\nSmooth espresso poured over ice, with milk to deploy.\nRefreshingly simple, yet satisfying, a coffee treat to employ.",
             "ingredients": [
@@ -480,7 +480,7 @@
         {
             "id": 13,
             "name": "Cold Brew Coffee",
-            "category": "Cold coffee",
+            "category": "Cold Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2015/06/11443.jpg?quality=90&webp=true&resize=300,272",
             "description": "Cold Brew Coffee, a smooth and bold creation, patiently brewed,\nGround coffee steeped in cold water, its flavor imbued.\nServed over ice, a refreshing pick-me-up, leaving taste buds renewed.",
             "ingredients": [
@@ -515,7 +515,7 @@
         {
             "id": 14,
             "name": "Café Liégeois",
-            "category": "Cold coffee",
+            "category": "Cold Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2019/10/Little-French-Coffee-liegois_9942-720adbe.jpg?quality=90&webp=true&crop=5px,1087px,2527px,1087px&resize=300,272",
             "description": "Café Liégeois, a French delight with elegance and flair,\nEspresso, ice cream, and whipped cream, a luxurious affair.\nIndulgent and velvety, a treat to savor, beyond compare.",
             "ingredients": [
@@ -593,7 +593,7 @@
         {
             "id": 15,
             "name": "Chocolate Affogato",
-            "category": "Cold coffee",
+            "category": "Cold Coffee",
             "image-url": "https://images.immediate.co.uk/production/volatile/sites/2/2023/03/Chocolate-affogato-7d42c59.jpg?quality=90&webp=true&resize=300,272",
             "description": "Chocolate Affogato, a decadent dessert in coffee's embrace,\nRich chocolate gelato drowned in espresso, a heavenly space.\nThe warmth of coffee melts the cold, creating a divine taste.",
             "ingredients": [

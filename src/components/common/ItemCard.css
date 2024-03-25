@@ -15,7 +15,6 @@
     left: 30px;
     bottom: 30px;
     display: flex;
-    z-index: 1000;
     cursor: pointer;
 
 }

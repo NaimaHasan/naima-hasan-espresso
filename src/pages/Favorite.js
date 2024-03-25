@@ -3,11 +3,11 @@ import { TopBar } from '../components/common/TopBar'
 import { ItemCard } from '../components/common/ItemCard'
 import { FilterBar } from '../components/common/FilterBar';
 
-export const Favorite = ({filter, setFilter}) => {
+export const Favorite = ({filter, setFilter, searchQuery, setSearchQuery}) => {
   const notes =[1,1,1,1,1,1,1,1];
   return (
     <div style={{backgroundColor: " #e0d9c7",  minHeight: "200vh"}}>
-      <TopBar/>
+      <TopBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
       <FilterBar filter={filter} setFilter={setFilter}/>
       <div>
       {notes.length === 0 ? (

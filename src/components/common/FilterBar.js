@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
 export const FilterBar = ({filter, setFilter}) => {
