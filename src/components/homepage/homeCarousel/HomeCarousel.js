@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { getRecipes } from "../../../services/CallApi";
 import { HomeCarouselCard } from "./HomeCarouselCard";
 import "./HomeCarousel.css";
 import {
@@ -10,17 +9,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 export const HomeCarousel = ({recipes}) => {
-  // const [recipes, setRecipes] = useState([]);
-
-  // useEffect(() => {
-  //   getRecipes()
-  //     .then((data) => {
-  //       setRecipes(data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Failed to fetch recipes:", error);
-  //     });
-  // }, []);
 
   const responsive = {
     desktop: {

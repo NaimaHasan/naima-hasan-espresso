@@ -5,6 +5,7 @@ import { Favorite } from "./pages/Favorite";
 import { Home } from "./pages/Home";
 import { Recipe } from "./pages/Recipe";
 import { SearchResults } from "./pages/SearchResults";
+import { AllRecipes } from "./pages/AllRecipes";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 
@@ -78,6 +79,18 @@ function App() {
             element={
               <SearchResults
                 searchedRecipes={searchedRecipes}
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
+              />
+            }
+          />
+          <Route
+            path="/allRecipes"
+            element={
+              <AllRecipes
+                filter={filter}
+                setFilter={setFilter}
+                recipes={filteredRecipes}
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
               />
