@@ -25,3 +25,25 @@ export const getRecipeById = async (id) => {
       throw error;
     }
   };
+
+  export const getRecipeByName = async (name) => {
+    try {
+      const response = await getRecipes();
+      return response.filter((x) => {
+        return x["name"] === name;
+      })[0];
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  export const getRecipeByCategory = async (category) => {
+    try {
+      const response = await getRecipes();
+      return response.filter((x) => {
+        return x["category"] === category;
+      })[0];
+    } catch (error) {
+      throw error;
+    }
+  };

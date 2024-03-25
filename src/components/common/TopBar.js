@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const TopBar = () => {
   const routeNames = ["Home", "Favorites"];
   return (
-    <div className="topbar" style={{ backgroundColor: " #575040" }}>
+    <div className="topbar">
       <h3>Espresso</h3>
       <div className="route-options">
         {routeNames.map((x, i) => (

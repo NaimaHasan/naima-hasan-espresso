@@ -6,7 +6,7 @@ import { Search } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
 export const HomeBanner = () => {
-  const routeNames = ["Home", "Favorites"];
+  const routeNames = ["Favorites"];
   return (
     <div>
       <Image src={heroImage} className="hero-image" />
@@ -15,7 +15,7 @@ export const HomeBanner = () => {
         <div className="route-options">
           {routeNames.map((x, i) => (
             <div style={{ paddingLeft: "40px"}}>
-              <Link to={x === "Home" ? "/" : "/favorite"} style={{textDecoration: "none", color: "white"}}><h5>{x}</h5></Link>
+              <Link to={"/favorite"} style={{textDecoration: "none", color: "white"}}><h5>{x}</h5></Link>
             </div>
           ))}
 

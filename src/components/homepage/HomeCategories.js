@@ -1,19 +1,25 @@
 import React from "react";
 import "./HomeCategories.css";
-import { Cake2, CupHot, CupStraw } from "react-bootstrap-icons";
-export const HomeCategories = () => {
+import { Cake2, CupHot, CupStraw, Cup } from "react-bootstrap-icons";
+export const HomeCategories = ({ filter, setFilter }) => {
   const categories = {
     "Hot Coffee": CupHot,
     "Cold Coffee": CupStraw,
-    "Desserts": Cake2,
+    "Dessert": Cake2,
+    "All": Cup,
   };
   return (
     <div className="category-banner">
       {Object.entries(categories).map(([key, IconComponent]) => (
-        <div key={key}>
-          <IconComponent size={40} className="category-icon" />
+        <div
+          key={key}
+          onClick={() => {
+            setFilter(key);
+          }}
+        >
+          <IconComponent size={40} className="category-icon" style={{color: key === filter ? "#575040" : "#999"}}/>
           <br />
-          <div style={{fontSize: "13px", textAlign: "center"}}>{key}</div>
+          <div style={{ fontSize: "13px", textAlign: "center" }}>{key}</div>
         </div>
       ))}
     </div>

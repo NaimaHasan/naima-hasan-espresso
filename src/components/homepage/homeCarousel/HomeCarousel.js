@@ -9,18 +9,18 @@ import {
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-export const HomeCarousel = () => {
-  const [recipes, setRecipes] = useState([]);
+export const HomeCarousel = ({recipes}) => {
+  // const [recipes, setRecipes] = useState([]);
 
-  useEffect(() => {
-    getRecipes()
-      .then((data) => {
-        setRecipes(data);
-      })
-      .catch((error) => {
-        console.error("Failed to fetch recipes:", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   getRecipes()
+  //     .then((data) => {
+  //       setRecipes(data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Failed to fetch recipes:", error);
+  //     });
+  // }, []);
 
   const responsive = {
     desktop: {
