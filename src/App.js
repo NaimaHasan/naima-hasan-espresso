@@ -12,7 +12,6 @@ import Layout from "./Layout";
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [filter, setFilter] = useState("All");
-  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     getRecipes()
@@ -28,28 +27,13 @@ function App() {
     if (filter !== "All" && recipe.category !== filter) {
       return false;
     }
-    if (
-      searchQuery &&
-      !recipe.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ) {
-      return false;
-    }
     return true;
   });
 
-  const searchedRecipes = recipes.filter((recipe) => {
-    if (
-      searchQuery &&
-      !recipe.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ) {
-      return false;
-    }
-    return true;
-  });
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout/>}>
           <Route
             index
             element={
@@ -57,8 +41,6 @@ function App() {
                 recipes={filteredRecipes}
                 filter={filter}
                 setFilter={setFilter}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
               />
             }
           />
@@ -67,22 +49,15 @@ function App() {
             element={
               <Favorite
                 filter={filter}
+                recipes={filteredRecipes}
                 setFilter={setFilter}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
               />
             }
           />
           <Route path="/recipe/:id" element={<Recipe />} />
           <Route
-            path="/searchResults"
-            element={
-              <SearchResults
-                searchedRecipes={searchedRecipes}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
-              />
-            }
+            path="/searchResults/:searchQuery"
+            element={<SearchResults />}
           />
           <Route
             path="/allRecipes"
@@ -91,8 +66,6 @@ function App() {
                 filter={filter}
                 setFilter={setFilter}
                 recipes={filteredRecipes}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
               />
             }
           />

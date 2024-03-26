@@ -3,22 +3,16 @@ import "./TopBar.css";
 import { Search } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
-export const TopBar = ({ searchQuery, setSearchQuery }) => {
+export const TopBar = ({ transparent }) => {
   const routeNames = ["Home", "Favorites"];
-  const [searchClicked, setSearchClicked] = useState(false);
   const [searchInput, setSearchInput] = useState("");
 
   const handleSearchInputChange = (event) => {
     setSearchInput(event.target.value);
   };
 
-  const handleSearchIconClick = () => {
-    setSearchQuery(searchInput);
-    setSearchClicked(true);
-  };
-
   return (
-    <div className="topbar">
+    <div className="topbar" style={{backgroundColor: transparent === true? "": "#575040"}}>
       <h3>Espresso</h3>
       <div className="route-options">
         {routeNames.map((x, i) => (
@@ -39,13 +33,12 @@ export const TopBar = ({ searchQuery, setSearchQuery }) => {
           placeholder="Search"
         />
         <Link
-          to={"/searchResults"}
+          to={"/searchResults/"+searchInput}
           style={{ textDecoration: "none", color: "white" }}
         >
           <Search
             style={{ color: "white", margin: "15px" }}
             size="20px"
-            onClick={handleSearchIconClick}
           />
         </Link>
       </div>

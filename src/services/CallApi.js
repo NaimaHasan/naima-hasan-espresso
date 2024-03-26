@@ -26,12 +26,12 @@ export const getRecipeById = async (id) => {
     }
   };
 
-  export const getRecipeByName = async (name) => {
+  export const getRecipeByName = async (searchQuery) => {
     try {
       const response = await getRecipes();
       return response.filter((x) => {
-        return x["name"] === name;
-      })[0];
+        return x["name"].toLowerCase().includes(searchQuery.toLowerCase());
+      });
     } catch (error) {
       throw error;
     }

@@ -15,6 +15,7 @@
     left: 30px;
     bottom: 30px;
     display: flex;
+    color: "black";
     cursor: pointer;
 
 }
@@ -23,5 +24,9 @@
     font-size: 22px;
     text-align: right;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    margin-left: 60px;
 
 }

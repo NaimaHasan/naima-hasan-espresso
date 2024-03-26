@@ -11,6 +11,7 @@
     right: 20px;
     top: 20px;
     display: flex;
+    color: "white";
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -25,9 +26,9 @@
 }
 
 .carousel-card-title {
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflowed content */
-    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
   }
 
 .gradient-overlay {

@@ -2,53 +2,30 @@ import React from "react";
 import { TopBar } from "../components/common/TopBar";
 import { ItemCard } from "../components/common/ItemCard";
 import { FilterBar } from "../components/common/FilterBar";
+import { Item } from "../components/common/Item";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { getRecipeByName } from "../services/CallApi";
 
-export const SearchResults = ({
-  searchQuery,
-  setSearchQuery,
-  searchedRecipes,
-}) => {
+export const SearchResults = () => {
+  const { searchQuery } = useParams();
+  const [recipes, setRecipes] = useState(null);
+
+  useEffect(() => {
+    getRecipeByName(searchQuery)
+      .then((data) => {
+        setRecipes(data);
+      })
+      .catch((error) => {
+        console.error("Failed to fetch recipes information:", error);
+      });
+  }, null);
+  
   return (
     <div style={{ backgroundColor: " #e0d9c7", minHeight: "200vh" }}>
-      <TopBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <TopBar transparent={false} />
       <div style={{paddingTop: "160px", textAlign: "center", fontSize: "30px"}}>Search Results</div>
-      <div>
-        {searchedRecipes.length === 0 ? (
-          <div
-            style={{
-              fontSize: "25px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "50vh",
-            }}
-          >
-            <p>There is no recipe to display!</p>
-          </div>
-        ) : (
-          <div
-            className="row"
-            style={{ padding: "10px 200px", marginTop: "40px" }}
-          >
-            {searchedRecipes.map((searchedRecipe, index) => (
-              <div
-                key={index}
-                className="col mb-4 d-flex justify-content-center"
-              >
-                <ItemCard
-                  title={searchedRecipe["name"]}
-                  id={searchedRecipe["id"]}
-                  imageUrl={searchedRecipe["image-url"]}
-                />
-              </div>
-            ))}
-
-            <div
-              className={`col-${12 - (searchedRecipes.length % 4) * 3} mb-4`}
-            />
-          </div>
-        )}
-      </div>
+      {recipes && <Item recipes={recipes}/>}
     </div>
   );
 };
