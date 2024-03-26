@@ -43,6 +43,7 @@ export const getRecipeByName = async (searchQuery) => {
 export const getRecipeByCategory = async (category) => {
   try {
     const response = await getRecipes();
+    if(category === "All")  return response;
     return response.filter((x) => {
       return x["category"].toLowerCase().includes(category.toLowerCase());
     });
@@ -109,7 +110,7 @@ export const getRecipeByIngredients = async (ingredientsList, category) => {
     const recipes = await getRecipeByCategory(category);
     return recipes.filter((recipe) => {
       const ingredientNames = recipe["ingredients"].map((ingredient) =>
-        ingredient.name.toLowerCase()
+        ingredient["name"].toLowerCase()
       );
       return ingredientsList.every((ingredient) =>
         ingredientNames.includes(ingredient.toLowerCase())

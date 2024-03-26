@@ -36,7 +36,7 @@ import {
 
 export const MakeCoffeeBody = () => {
   const [ingredients, setIngredients] = useState([]);
-  const [temperature, setTemperature] = useState("None");
+  const [temperature, setTemperature] = useState("All");
   const [sugarSelected, setSugarSelected] = useState(false);
   const ingredientsList = ["Espresso", "Milk", "Caramel", "Cream"];
   const [suggestedRecipes, setSuggestedRecipes] = useState([]);
@@ -80,7 +80,7 @@ export const MakeCoffeeBody = () => {
 
   const toggleTemperature = (temp) => {
     if (temperature === temp) {
-      setTemperature("None");
+      setTemperature("All");
     } else {
       setTemperature(temp);
     }
@@ -94,7 +94,7 @@ export const MakeCoffeeBody = () => {
         <Col
           style={{
             backgroundColor: "#624f45",
-            height: "100vh",
+            minHeight: "100vh",
             alignItems: "center",
             justifyContent: "center",
           }}
@@ -134,9 +134,9 @@ export const MakeCoffeeBody = () => {
           className="d-flex flex-column"
           style={{
             backgroundColor: "#e0d9c7",
-            height: "100vh",
+            minHeight: "100vh",
             alignItems: "center",
-            justifyContent: "center",
+            paddingTop: "180px",
           }}
         >
           <div>
@@ -148,7 +148,8 @@ export const MakeCoffeeBody = () => {
               }}
             >
               Press the submit button to see the what can be made with the
-              selected ingredients
+              selected ingredients. <br /> Press the clear button to clear the
+              suggested recipes.
             </div>
             <div style={{ fontSize: "22px" }}>
               What kind of coffee do you want?
@@ -206,22 +207,37 @@ export const MakeCoffeeBody = () => {
                 Sugar
               </div>
             </div>
-            <div
-              className="submit-button"
-              onClick={async () => {
-                const recipes = await getRecipeByIngredients(
-                  ingredients,
-                  temperature
-                );
-                console.log(recipes);
-                setSuggestedRecipes(recipes);
-              }}
-            >
-              Submit
+            <div style={{ display: "flex" }}>
+              <div
+                className="submit-button"
+                onClick={async () => {
+                  const recipes = await getRecipeByIngredients(
+                    ingredients,
+                    temperature
+                  );
+                  console.log(recipes);
+                  setSuggestedRecipes(recipes);
+                }}
+              >
+                Submit
+              </div>
+              <div
+                className="submit-button"
+                onClick={() => setSuggestedRecipes([])}
+              >
+                Clear
+              </div>
             </div>
+            {suggestedRecipes.length != 0 && (
+              <div style={{ fontSize: "22px", padding: "50px 20px 0px 0px" }}>
+                Suggested Recipes:
+              </div>
+            )}
             {suggestedRecipes &&
               suggestedRecipes.map((recipe, index) => (
-                <div key={index}>{recipe["name"]}</div>
+                <div key={index} className="ingredient-button">
+                  {recipe["name"]}
+                </div>
               ))}
           </div>
         </Col>
