@@ -8,6 +8,7 @@ import { SearchResults } from "./pages/SearchResults";
 import { AllRecipes } from "./pages/AllRecipes";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
+import { MakeCoffee } from "./pages/MakeCoffee";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -33,7 +34,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route path="/" element={<Layout />}>
           <Route
             index
             element={
@@ -54,7 +55,10 @@ function App() {
               />
             }
           />
-          <Route path="/recipe/:id" element={<Recipe />} />
+          <Route
+            path="/recipe/:id"
+            element={<Recipe/>}
+          />
           <Route
             path="/searchResults/:searchQuery"
             element={<SearchResults />}
@@ -70,6 +74,7 @@ function App() {
             }
           />
         </Route>
+        <Route path="/makeCoffee" element={<MakeCoffee/>} />
       </Routes>
     </BrowserRouter>
   );
