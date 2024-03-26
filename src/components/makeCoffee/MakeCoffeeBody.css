@@ -1,0 +1,79 @@
+.ingredient-button {
+    background-color: #575040;
+    color: #e0d9c7;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    margin: 30px 50px 20px 0px;
+    padding: 18px 30px;
+    cursor: pointer;
+}
+
+.ingredient-button:hover {
+    background-color: #333029;
+}
+
+.ingredient-button-selected {
+    background-color: #24221d;
+}
+
+.temp-button {
+    background-color: #575040;
+    display: flex;
+    color: #e0d9c7;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    margin: 30px 50px 20px 0px;
+    padding: 18px 30px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.temp-button:hover {
+    background-color: #333029;
+}
+
+.temp-button-selected {
+    background-color: #24221d;
+}
+
+.submit-button {
+    background-color: #575040;
+    color: #e0d9c7;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    margin: 60px 50px 20px 0px;
+    padding: 10px 200px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #333029;
+}
+
+.submit-button-selected {
+    background-color: #24221d;
+}
+
+.make-coffee-image {
+    position: absolute;
+    object-fit: cover;
+    width: 30%;
+    height: auto;
+    translate: -50% -30%;
+
+}
+
+.make-coffee-smoke {
+    position: absolute;
+    object-fit: cover;
+    width: 30%;
+    height: auto;
+    translate: -55% -80%;
+
+}

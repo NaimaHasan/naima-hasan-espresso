@@ -8,7 +8,6 @@ export const HomeCategories = ({ filter, setFilter }) => {
     "Dessert": Cake2,
     "All": Cup,
   };
-  const [isHoveredHeart, setIsHoveredHeart] = useState(false);
   return (
     <div className="category-banner">
       {Object.entries(categories).map(([key, IconComponent]) => (

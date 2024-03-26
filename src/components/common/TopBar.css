@@ -27,6 +27,17 @@
     align-items: center;
 }
 
+.route-option-item {
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+}
+
+.route-option-item:hover {
+    font-weight: 500;
+}
+
+
 input:focus {
     outline: none;
     border-bottom: 2px solid #ccc;

@@ -12,16 +12,22 @@ export const TopBar = ({ home }) => {
   };
 
   return (
-    <div className="topbar" style={{backgroundColor: home? "": "#575040", position: home? "absolute" : "fixed"}}>
+    <div
+      className="topbar"
+      style={{
+        backgroundColor: home ? "" : "#575040",
+        position: home ? "absolute" : "fixed",
+      }}
+    >
       <h3>Espresso</h3>
       <div className="route-options">
         {routeNames.map((x, i) => (
           <div style={{ paddingLeft: "40px" }}>
             <Link
               to={x === "Home" ? "/" : "/favorite"}
-              style={{ textDecoration: "none", color: "white" }}
+              className="route-option-item"
             >
-              <h5>{x}</h5>
+              {x}
             </Link>
           </div>
         ))}
@@ -33,13 +39,10 @@ export const TopBar = ({ home }) => {
           placeholder="Search"
         />
         <Link
-          to={"/searchResults/"+searchInput}
+          to={"/searchResults/" + searchInput}
           style={{ textDecoration: "none", color: "white" }}
         >
-          <Search
-            style={{ color: "white", margin: "15px" }}
-            size="20px"
-          />
+          <Search style={{ color: "white", margin: "15px" }} size="20px" />
         </Link>
       </div>
     </div>
