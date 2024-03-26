@@ -23,7 +23,7 @@ export const SearchResults = () => {
   
   return (
     <div style={{ backgroundColor: " #e0d9c7", minHeight: "200vh" }}>
-      <TopBar transparent={false} />
+      <TopBar home={false} />
       <div style={{paddingTop: "160px", textAlign: "center", fontSize: "30px"}}>Search Results</div>
       {recipes && <Item recipes={recipes}/>}
     </div>

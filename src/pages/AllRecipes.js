@@ -10,7 +10,7 @@ export const AllRecipes = ({
 }) => {
   return (
     <div style={{ backgroundColor: " #e0d9c7", minHeight: "200vh" }}>
-      <TopBar transparent={false} />
+      <TopBar home={false} />
       <FilterBar filter={filter} setFilter={setFilter} />
       <Item recipes={recipes}/>
     </div>

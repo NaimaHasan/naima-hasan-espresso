@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeCategories.css";
 import { Cake2, CupHot, CupStraw, Cup } from "react-bootstrap-icons";
 export const HomeCategories = ({ filter, setFilter }) => {
@@ -8,6 +8,7 @@ export const HomeCategories = ({ filter, setFilter }) => {
     "Dessert": Cake2,
     "All": Cup,
   };
+  const [isHoveredHeart, setIsHoveredHeart] = useState(false);
   return (
     <div className="category-banner">
       {Object.entries(categories).map(([key, IconComponent]) => (

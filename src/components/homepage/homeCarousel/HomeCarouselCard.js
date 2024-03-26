@@ -20,7 +20,7 @@ export const HomeCarouselCard = ({ recipe }) => {
           </div>
         </Link>
         <div className="carousel-card-heart">
-          <FavoriteHeart size={"18px"} defaultColor={"white"}/>
+          <FavoriteHeart id={recipe["id"]} size={"20px"} defaultColor={"white"}/>
         </div>
       </Card>
     </div>

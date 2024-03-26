@@ -19,7 +19,7 @@ export const ItemCard = ({ recipe }) => {
           <Card.Body className="item-name">{recipe["name"]}</Card.Body>
         </Link>
         <div className="item-heart">
-          <FavoriteHeart size={"22px"} defaultColor={"black"} />
+          <FavoriteHeart id={recipe["id"]} size={"22px"} defaultColor={"black"} />
         </div>
       </Card>
     </div>

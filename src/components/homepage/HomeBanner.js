@@ -8,7 +8,7 @@ export const HomeBanner = () => {
   return (
     <div>
       <Image src={heroImage} className="hero-image" />
-      <TopBar transparent={true} />
+      <TopBar home={true} />
       <div className="hero-welcome">
         <h4>Welcome!</h4>
         <h2>

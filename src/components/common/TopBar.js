@@ -3,7 +3,7 @@ import "./TopBar.css";
 import { Search } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
-export const TopBar = ({ transparent }) => {
+export const TopBar = ({ home }) => {
   const routeNames = ["Home", "Favorites"];
   const [searchInput, setSearchInput] = useState("");
 
@@ -12,7 +12,7 @@ export const TopBar = ({ transparent }) => {
   };
 
   return (
-    <div className="topbar" style={{backgroundColor: transparent === true? "": "#575040"}}>
+    <div className="topbar" style={{backgroundColor: home? "": "#575040", position: home? "absolute" : "fixed"}}>
       <h3>Espresso</h3>
       <div className="route-options">
         {routeNames.map((x, i) => (

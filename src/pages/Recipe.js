@@ -32,7 +32,7 @@ export const Recipe = () => {
         height: '220vh',
       }}
     >
-      <TopBar transparent={false}/>
+      <TopBar home={false}/>
       <Card style={{top: "220px", margin: "0px 200px", paddingBottom: "100px", backgroundColor: "#e0d9c7"}}>
         {recipe && (
           <RecipeBanner
