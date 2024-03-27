@@ -10,12 +10,12 @@ import { Card } from "react-bootstrap";
 
 export const Recipe = () => {
   const { id } = useParams();
-  const [recipe, setRecipes] = useState(null);
+  const [recipe, setRecipe] = useState(null);
 
   useEffect(() => {
     getRecipeById(id)
       .then((data) => {
-        setRecipes(data);
+        setRecipe(data);
       })
       .catch((error) => {
         console.error("Failed to fetch recipes information:", error);
@@ -32,16 +32,11 @@ export const Recipe = () => {
         height: '220vh',
       }}
     >
-      <TopBar />
+      <TopBar home={false}/>
       <Card style={{top: "220px", margin: "0px 200px", paddingBottom: "100px", backgroundColor: "#e0d9c7"}}>
         {recipe && (
           <RecipeBanner
-            title={recipe.name}
-            id={recipe.id}
-            category={recipe.category}
-            description={recipe.description}
-            imageUrl={recipe["image-url"]}
-            ingredients={recipe.ingredients}
+            recipe = {recipe}
           />
         )}
         {recipe && <RecipeSteps steps={recipe.steps} />}

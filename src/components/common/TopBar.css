@@ -1,11 +1,9 @@
 
 .topbar {
-    position: fixed;
     width: 100%;
     top: 0px;
     height: 100px;
     color: white;
-    background-color: #575040;
     display: flex;
     padding-left: 80px;
     padding-right: 80px;
@@ -28,6 +26,17 @@
     margin-left: auto;
     align-items: center;
 }
+
+.route-option-item {
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+}
+
+.route-option-item:hover {
+    font-weight: 500;
+}
+
 
 input:focus {
     outline: none;

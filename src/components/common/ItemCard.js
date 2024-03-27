@@ -5,43 +5,21 @@ import Image from "react-bootstrap/Image";
 import heroImage from "../../assets/homepage/hero.jpg";
 import { Link } from "react-router-dom";
 import "./ItemCard.css";
+import { FavoriteHeart } from "./FavoriteHeart";
 
-export const ItemCard = ({ id, title, imageUrl }) => {
-  const [isHoveredHeart, setIsHoveredHeart] = useState(false);
-  const [isHeartFilled, setIsHeartFilled] = useState(false);
-
-  const handleHeartClick = () => {
-    setIsHeartFilled(!isHeartFilled);
-  };
-
+export const ItemCard = ({ recipe }) => {
   return (
     <div>
       <Card className="item-card">
         <Link
-          to={"/recipe/"+id}
+          to={"/recipe/"+recipe["id"]}
           style={{ textDecoration: "none", color: "#575040" }}
         >
-          <Image src={imageUrl} className="item-image" />
-          <Card.Body className="item-name">{title}</Card.Body>
+          <Image src={recipe["image-url"]} className="item-image" />
+          <Card.Body className="item-name">{recipe["name"]}</Card.Body>
         </Link>
         <div className="item-heart">
-          {isHeartFilled ? (
-            <HeartFill
-              size="22px"
-              className={isHeartFilled ? "icon-hover" : ""}
-              style={{ color: "red" }}
-              onClick={handleHeartClick}
-            />
-          ) : (
-            <Heart
-              size="22px"
-              className={isHoveredHeart ? "icon-hover" : ""}
-              style={{ color: isHoveredHeart ? "red" : "black" }}
-              onMouseEnter={() => setIsHoveredHeart(true)}
-              onMouseLeave={() => setIsHoveredHeart(false)}
-              onClick={handleHeartClick}
-            />
-          )}
+          <FavoriteHeart id={recipe["id"]} size={"22px"} defaultColor={"black"} />
         </div>
       </Card>
     </div>

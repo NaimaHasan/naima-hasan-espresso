@@ -1,39 +1,28 @@
-import React from 'react'
-import { TopBar } from '../components/common/TopBar'
-import { ItemCard } from '../components/common/ItemCard'
-import { FilterBar } from '../components/common/FilterBar';
+import React, { useState, useEffect } from "react";
+import { TopBar } from "../components/common/TopBar";
+import { ItemCard } from "../components/common/ItemCard";
+import { FilterBar } from "../components/common/FilterBar";
+import { Item } from "../components/common/Item";
+import { getRecipeByFavorite } from "../services/CallApi";
 
-export const Favorite = ({filter, setFilter, searchQuery, setSearchQuery}) => {
-  const notes =[1,1,1,1,1,1,1,1];
+export const Favorite = ({ filter, setFilter }) => {
+  const [recipes, setRecipes] = useState(null);
+
+  useEffect(() => {
+    getRecipeByFavorite()
+      .then((data) => {
+        setRecipes(data);
+      })
+      .catch((error) => {
+        console.error("Failed to fetch recipes information:", error);
+      });
+  }, null);
+
   return (
-    <div style={{backgroundColor: " #e0d9c7",  minHeight: "200vh"}}>
-      <TopBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
-      <FilterBar filter={filter} setFilter={setFilter}/>
-      <div>
-      {notes.length === 0 ? (
-        <div
-          style={{
-            fontSize: "25px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "50vh",
-          }}
-        >
-          <p>There is no note to display!</p>
-        </div>
-      ) : (
-        <div className="row" style={{padding: "0px 200px", marginTop: "40px"}}>
-          {notes.map((note, index) => (
-            <div key={index} className="col mb-4 d-flex justify-content-center" >
-              <ItemCard/>
-            </div>
-          ))}
-
-          <div className={`col-${12 - (notes.length % 4) * 3} mb-4`} />
-        </div>
-      )}
+    <div style={{ backgroundColor: " #e0d9c7", minHeight: "200vh" }}>
+      <TopBar home={false} />
+      <FilterBar filter={filter} setFilter={setFilter} />
+      {recipes && <Item recipes={recipes} />}
     </div>
-    </div>
-  )
-}
+  );
+};

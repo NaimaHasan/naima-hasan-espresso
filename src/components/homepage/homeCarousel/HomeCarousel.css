@@ -1,20 +1,38 @@
+.carousel-heading {
+  color: #575040;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.carousel-see-all {
+  right: 0;
+  position: absolute;
+  padding-right: 250px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+
 .carousel-container {
-    position: relative;
-    
-  }
-  
-  .custom-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color:  #e0d9c7;
-  }
-  
-  .left-arrow {
-    left: -20px;
-  }
-  
-  .right-arrow {
-    right: -20px; /* Adjust this value to shift the right arrow */
-  }
-  
+  position: relative;
+
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e0d9c7;
+}
+
+.left-arrow {
+  left: -20px;
+}
+
+.right-arrow {
+  right: -20px;
+  /* Adjust this value to shift the right arrow */
+}

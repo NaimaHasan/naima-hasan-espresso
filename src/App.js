@@ -8,11 +8,11 @@ import { SearchResults } from "./pages/SearchResults";
 import { AllRecipes } from "./pages/AllRecipes";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
+import { MakeCoffee } from "./pages/MakeCoffee";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [filter, setFilter] = useState("All");
-  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     getRecipes()
@@ -28,24 +28,9 @@ function App() {
     if (filter !== "All" && recipe.category !== filter) {
       return false;
     }
-    if (
-      searchQuery &&
-      !recipe.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ) {
-      return false;
-    }
     return true;
   });
 
-  const searchedRecipes = recipes.filter((recipe) => {
-    if (
-      searchQuery &&
-      !recipe.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ) {
-      return false;
-    }
-    return true;
-  });
   return (
     <BrowserRouter>
       <Routes>
@@ -57,8 +42,6 @@ function App() {
                 recipes={filteredRecipes}
                 filter={filter}
                 setFilter={setFilter}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
               />
             }
           />
@@ -67,22 +50,18 @@ function App() {
             element={
               <Favorite
                 filter={filter}
+                recipes={filteredRecipes}
                 setFilter={setFilter}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
               />
             }
           />
-          <Route path="/recipe/:id" element={<Recipe />} />
           <Route
-            path="/searchResults"
-            element={
-              <SearchResults
-                searchedRecipes={searchedRecipes}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
-              />
-            }
+            path="/recipe/:id"
+            element={<Recipe/>}
+          />
+          <Route
+            path="/searchResults/:searchQuery"
+            element={<SearchResults />}
           />
           <Route
             path="/allRecipes"
@@ -91,12 +70,11 @@ function App() {
                 filter={filter}
                 setFilter={setFilter}
                 recipes={filteredRecipes}
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
               />
             }
           />
         </Route>
+        <Route path="/makeCoffee" element={<MakeCoffee/>} />
       </Routes>
     </BrowserRouter>
   );

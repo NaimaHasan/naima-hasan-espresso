@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeCategories.css";
 import { Cake2, CupHot, CupStraw, Cup } from "react-bootstrap-icons";
 export const HomeCategories = ({ filter, setFilter }) => {
