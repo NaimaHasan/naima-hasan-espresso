@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import { CheckSquareFill, HeartFill, Square } from "react-bootstrap-icons";
+import { CheckSquareFill, Square } from "react-bootstrap-icons";
 import "./RecipeSteps.css";
 import { Card } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
 
-export const RecipeSteps = ({steps}) => {
-  const [isHoveredCheck, setIsHoveredCheck] = useState(false);
-  const [isCheckFilled, setIsCheckFilled] = useState(false);
+export const RecipeSteps = ({ steps }) => {
+  const [checkStates, setCheckStates] = useState(steps.map(() => false));
 
-  const handleCheckClick = ({steps}) => {
-    setIsCheckFilled(!isCheckFilled);
+  const handleCheckClick = (index) => {
+    const newCheckStates = [...checkStates];
+    newCheckStates[index] = !newCheckStates[index];
+    setCheckStates(newCheckStates);
   };
+
   return (
     <Container>
       <Row>
@@ -19,26 +21,23 @@ export const RecipeSteps = ({steps}) => {
             <Card className="step-card">
               <div className="step-heading">Steps</div>
               <div className="step-wrapper">
-                {steps.map((step) => (
-                  <div className="step-text">
+
+                {steps.map((step, index) => (
+                  <div className="step-text" key={index}>
                     <div style={{ marginRight: "14px" }}>
-                      {isCheckFilled ? (
+                      {checkStates[index] ? (
                         <CheckSquareFill
                           size="18px"
-                          className={isCheckFilled ? "icon-hover" : ""}
+                          className="icon-hover"
                           style={{ color: "#575040" }}
-                          onClick={handleCheckClick}
+                          onClick={() => handleCheckClick(index)}
                         />
                       ) : (
                         <Square
                           size="18px"
-                          className={isHoveredCheck ? "icon-hover" : ""}
-                          style={{
-                            color: isHoveredCheck ? "#575040" : "black",
-                          }}
-                          onMouseEnter={() => setIsHoveredCheck(true)}
-                          onMouseLeave={() => setIsHoveredCheck(false)}
-                          onClick={handleCheckClick}
+                          className="icon-hover"
+                          style={{ color: "black" }}
+                          onClick={() => handleCheckClick(index)}
                         />
                       )}
                     </div>

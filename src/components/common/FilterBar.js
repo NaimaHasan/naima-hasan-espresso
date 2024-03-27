@@ -1,38 +1,30 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import "./FilterBar.css";
 
-export const FilterBar = ({filter, setFilter}) => {
-  const filterOptions = [
-    "Hot Coffee",
-    "Cold Coffee",
-    "Dessert",
-    "All",
-  ];
-
+export const FilterBar = ({ filter, setFilter }) => {
+  const filterOptions = ["Hot Coffee", "Cold Coffee", "Dessert", "All"];
+  const [isHoveredButton, setHoveredButton] = useState(null);
   return (
-    <div
-      style={{alignItems: "center", display: "flex", justifyContent: "center", paddingTop: "170px"}}
-    >
-          {filterOptions.map((option, index) => (
-            <div key={index} style={{ paddingRight: "25px", paddingBottom: "10px", flex: "0 0 auto" }}>
-              <Button
-                style={{
-                  fontSize: "15px",
-                  borderRadius: "25px",
-                  backgroundColor: option === filter ? "#575040" : "#999",
-                  color: "#fff",
-                  border: "none",
-                  padding: "10px 20px",
-                }}
-                onClick={() => {
-                  setFilter(option);
-                }}
-              >
-                {option}
-              </Button>
-            </div>
-          ))}
+    <div className="filter-container">
+      {filterOptions.map((option, index) => (
+        <div key={index} className="filter-options">
+          <Button
+            style={{
+              backgroundColor:
+                option === filter || isHoveredButton === option
+                  ? "#575040"
+                  : "#999",
+            }}
+            className="filter-button"
+            onClick={() => setFilter(option)}
+            onMouseEnter={() => setHoveredButton(option)}
+            onMouseLeave={() => setHoveredButton(null)}
+          >
+            {option}
+          </Button>
         </div>
-      
+      ))}
+    </div>
   );
 };

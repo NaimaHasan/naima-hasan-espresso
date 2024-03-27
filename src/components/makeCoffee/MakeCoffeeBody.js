@@ -1,9 +1,3 @@
-import React, { useState } from "react";
-import { Row, Col } from "react-bootstrap";
-import { CupHot, CupStraw } from "react-bootstrap-icons";
-import Image from "react-bootstrap/Image";
-import "./MakeCoffeeBody.css";
-
 import backgroundImage from "../../assets/makeCoffee/background.png";
 import foregroundImage from "../../assets/makeCoffee/foreground.png";
 import ice from "../../assets/makeCoffee/ice.png";
@@ -29,10 +23,18 @@ import topCaramel from "../../assets/makeCoffee/top-caramel.png";
 import topCream from "../../assets/makeCoffee/top-cream.png";
 import topEspresso from "../../assets/makeCoffee/top-espresso.png";
 import topMilk from "../../assets/makeCoffee/top-milk.png";
-import {
-  getRecipeByCategory,
-  getRecipeByIngredients,
-} from "../../services/CallApi";
+
+
+
+import React, { useState } from "react";
+import { Row, Col } from "react-bootstrap";
+import { CupHot, CupStraw } from "react-bootstrap-icons";
+import Image from "react-bootstrap/Image";
+import "./MakeCoffeeBody.css";
+import { Link } from "react-router-dom";
+import { Item } from "../../components/common/Item";
+import { getRecipeByIngredients } from "../../services/CallApi";
+
 
 export const MakeCoffeeBody = () => {
   const [ingredients, setIngredients] = useState([]);
@@ -228,17 +230,25 @@ export const MakeCoffeeBody = () => {
                 Clear
               </div>
             </div>
-            {suggestedRecipes.length != 0 && (
+            {suggestedRecipes.length !== 0 && (
               <div style={{ fontSize: "22px", padding: "50px 20px 0px 0px" }}>
                 Suggested Recipes:
               </div>
             )}
-            {suggestedRecipes &&
-              suggestedRecipes.map((recipe, index) => (
-                <div key={index} className="ingredient-button">
-                  {recipe["name"]}
-                </div>
-              ))}
+            <div>
+              {suggestedRecipes &&
+                suggestedRecipes.map((recipe, index) => (
+                  <Link
+                    to={"/recipe/" + recipe["id"]}
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    {/* <div key={index} className="ingredient-button">
+                      {recipe["name"]}
+                    </div> */}
+                  </Link>
+                ))}
+              {suggestedRecipes && <Item recipes={suggestedRecipes} />}
+            </div>
           </div>
         </Col>
       </Row>

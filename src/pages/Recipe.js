@@ -32,7 +32,7 @@ export const Recipe = () => {
         height: '220vh',
       }}
     >
-      <TopBar home={false}/>
+      <TopBar routeName={"Recipe"} />
       <Card style={{top: "220px", margin: "0px 200px", paddingBottom: "100px", backgroundColor: "#e0d9c7"}}>
         {recipe && (
           <RecipeBanner

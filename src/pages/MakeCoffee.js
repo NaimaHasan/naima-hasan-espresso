@@ -6,7 +6,7 @@ import { MakeCoffeeBody } from "../components/makeCoffee/MakeCoffeeBody";
 export const MakeCoffee = () => {
   return (
     <div>
-      <TopBar home={false} />
+      <TopBar routeName={"Make Coffee"} />
       <MakeCoffeeBody/>
     </div>
   );

@@ -1,19 +1,12 @@
-import React, { useState } from "react";
-import { Heart, HeartFill, Dot } from "react-bootstrap-icons";
+import React from "react";
+import { Dot } from "react-bootstrap-icons";
 import { Card } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import heroImage from "../../assets/homepage/hero.jpg";
 import "./RecipeBanner.css";
 import { FavoriteHeart } from "../common/FavoriteHeart";
 
 export const RecipeBanner = ({recipe}) => {
-  const [isHoveredHeart, setIsHoveredHeart] = useState(false);
-  const [isHeartFilled, setIsHeartFilled] = useState(false);
- 
-  const handleHeartClick = () => {
-    setIsHeartFilled(!isHeartFilled);
-  };
   return (
     <Container>
       <Row>
@@ -21,7 +14,7 @@ export const RecipeBanner = ({recipe}) => {
           <Card className="recipe-card">
             <Image src={recipe["image-url"]} className="recipe-image" />
             <div className="recipe-heart">
-              <FavoriteHeart size={"22px"}/>
+              <FavoriteHeart id={recipe["id"]} size={"22px"} defaultColor={"black"}/>
             </div>
             <Card.Body className="recipe-category">
               Category: {recipe["category"]}

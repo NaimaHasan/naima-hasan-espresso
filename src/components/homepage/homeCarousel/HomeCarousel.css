@@ -18,8 +18,11 @@
 
 .carousel-container {
   position: relative;
+  margin: 10px 200px;
 
 }
+
+/* 
 
 .custom-arrow {
   position: absolute;
@@ -29,10 +32,11 @@
 }
 
 .left-arrow {
-  left: -20px;
+  left: -5px;
+  z-index: 1000;
+  position: absolute;
 }
 
 .right-arrow {
-  right: -20px;
-  /* Adjust this value to shift the right arrow */
-}
+  right: -5px;
+} */

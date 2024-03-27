@@ -27,6 +27,8 @@ export const HomeCarousel = ({ recipes }) => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+
+  
   return (
     <div>
       <div className="carousel-heading">
@@ -35,25 +37,12 @@ export const HomeCarousel = ({ recipes }) => {
           <div className="carousel-see-all">See all</div>
         </Link>
       </div>
-      <div style={{ margin: "10px 200px" }}>
+      <div className="carousel-container">
         <Carousel
           swipeable={true}
           draggable={true}
           responsive={responsive}
           infinite={true}
-          renderButtonGroupOutside={true}
-          customLeftArrow={
-            <ArrowLeftCircleFill
-              size="40px"
-              className="custom-arrow left-arrow"
-            />
-          }
-          customRightArrow={
-            <ArrowRightCircleFill
-              size="40px"
-              className="custom-arrow right-arrow"
-            />
-          }
           itemClass="carousel-item-padding-40-px"
         >
           {recipes.map((recipe, index) => (

@@ -31,10 +31,11 @@
     text-decoration: none; 
     color: white;
     font-size: 20px;
+    font-weight: 300;
 }
 
 .route-option-item:hover {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
