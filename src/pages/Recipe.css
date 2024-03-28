@@ -1,0 +1,16 @@
+.recipe-container {
+    top: 220px;
+    margin: 0px 200px;
+    padding-bottom: 100px;
+    background-color: #e0d9c7;
+}
+
+@media (max-width: 767px) {
+    .recipe-container {
+        top: 140px;
+        margin: 0px 15px;
+        padding-bottom: 100px;
+        background-color: #e0d9c7;
+    }
+
+}

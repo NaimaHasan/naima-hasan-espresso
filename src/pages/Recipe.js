@@ -4,9 +4,9 @@ import { RecipeSteps } from "../components/recipe/RecipeSteps";
 import { TopBar } from "../components/common/TopBar";
 import { useParams } from "react-router-dom";
 import { getRecipeById } from "../services/CallApi";
-import Image from "react-bootstrap/Image";
 import backgroundImage from "../assets/homepage/hero.jpg";
 import { Card } from "react-bootstrap";
+import "./Recipe.css"
 
 export const Recipe = () => {
   const { id } = useParams();
@@ -33,7 +33,7 @@ export const Recipe = () => {
       }}
     >
       <TopBar routeName={"Recipe"} />
-      <Card style={{top: "220px", margin: "0px 200px", paddingBottom: "100px", backgroundColor: "#e0d9c7"}}>
+      <Card className="recipe-container">
         {recipe && (
           <RecipeBanner
             recipe = {recipe}
