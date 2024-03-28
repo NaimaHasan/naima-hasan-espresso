@@ -1,5 +1,6 @@
 import React from "react";
 import { ItemCard } from "./ItemCard";
+import "./Item.css"
 
 export const Item = ({ recipes }) => {
   return (
@@ -17,10 +18,7 @@ export const Item = ({ recipes }) => {
           <p>There is no recipe to display!</p>
         </div>
       ) : (
-        <div
-          className="row"
-          style={{ padding: "10px 200px", marginTop: "40px" }}
-        >
+        <div className="item-container row">
           {recipes.map((recipe, index) => (
             <div key={index} className="col mb-4 d-flex justify-content-center">
               <ItemCard recipe={recipe} />

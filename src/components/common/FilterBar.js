@@ -9,7 +9,7 @@ export const FilterBar = ({ filter, setFilter }) => {
     <div className="filter-container">
       {filterOptions.map((option, index) => (
         <div key={index} className="filter-options">
-          <Button
+          <div
             style={{
               backgroundColor:
                 option === filter || isHoveredButton === option
@@ -22,7 +22,7 @@ export const FilterBar = ({ filter, setFilter }) => {
             onMouseLeave={() => setHoveredButton(null)}
           >
             {option}
-          </Button>
+          </div>
         </div>
       ))}
     </div>
