@@ -28,11 +28,10 @@ export const HomeCarousel = ({ recipes }) => {
     },
   };
 
-  
   return (
     <div>
       <div className="carousel-heading">
-        <h3>Available Recipes</h3>
+        <div className="carousel-heading-text">Available Recipes</div>
         <Link to={"/allRecipes"} style={{ color: "black" }}>
           <div className="carousel-see-all">See all</div>
         </Link>

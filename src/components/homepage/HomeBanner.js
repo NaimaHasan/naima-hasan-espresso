@@ -11,18 +11,20 @@ export const HomeBanner = () => {
     <div>
       <Image src={heroImage} className="hero-image" />
       <TopBar routeName={"Home"} />
-      <div className="hero-welcome">
-        <h4>Welcome!</h4>
-        <h2>
-          Discover a collection of delicious coffee recipes to elevate your
-          brewing experience.
-        </h2>
-        <Link
-          to={"/makeCoffee"}
-          style={{ textDecoration: "none", color: "black"}}
-        >
-          <div className="make-coffee">Make Your Own Coffee</div>
-        </Link>
+      <div className="hero-welcome-position">
+        <div className="hero-welcome">
+        Welcome!
+        </div>
+      <div className="hero-welcome-text">
+        Discover a collection of delicious coffee recipes to elevate your
+        brewing experience.
+      </div>
+      <Link
+        to={"/makeCoffee"}
+        style={{ textDecoration: "none", color: "black" }}
+      >
+        <div className="make-coffee">Make Your Own Coffee</div>
+      </Link>
       </div>
     </div>
   );

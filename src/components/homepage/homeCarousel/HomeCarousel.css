@@ -5,12 +5,20 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  position: relative;
+  
+}
+
+.carousel-heading-text{
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .carousel-see-all {
-  right: 0;
   position: absolute;
-  padding-right: 250px;
+  right: 0;
+  padding-right: 240px;
   font-size: 20px;
   text-decoration: underline;
 }
@@ -22,21 +30,30 @@
 
 }
 
-/* 
+@media (max-width: 767px) {
+  .carousel-heading {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
 
-.custom-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #e0d9c7;
+  .carousel-heading-text{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .carousel-see-all {
+    right: 0;
+    padding-right: 20px;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+
+  .carousel-container {
+    position: relative;
+    margin: 10px 20px;
+
+  }
+
+
 }
-
-.left-arrow {
-  left: -5px;
-  z-index: 1000;
-  position: absolute;
-}
-
-.right-arrow {
-  right: -5px;
-} */

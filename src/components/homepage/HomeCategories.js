@@ -22,14 +22,13 @@ export const HomeCategories = ({ filter, setFilter }) => {
           onClick={() => setFilter(key)}
         >
           <IconComponent
-            size={40}
             className="category-icon"
             style={{
               color: key === filter || hoveredCategory === key ? "#575040" : "#999",
             }}
           />
           <br />
-          <div style={{ fontSize: "13px", textAlign: "center" }}>{key}</div>
+          <div className="category-icon-text">{key}</div>
         </div>
       ))}
     </div>

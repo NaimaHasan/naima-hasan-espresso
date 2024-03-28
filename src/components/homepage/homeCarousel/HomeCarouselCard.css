@@ -29,14 +29,47 @@
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis; 
+    font-weight: 300;
   }
 
 .gradient-overlay {
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%; 
+    width: 40%; 
     height: 21rem;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)); 
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)); 
     margin: 5px 5px;
   }
+
+  
+
+  @media (max-width: 767px) {
+    .carousel-card {
+        width: 16rem;
+        height: 18rem;
+    }
+    
+    .carousel-card-image {
+        height: 17rem;
+    }
+    
+    .carousel-card-title {
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+      }
+    
+    .gradient-overlay {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30%; 
+        height: 17rem;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)); 
+        margin: 5px 5px;
+      }
+    
+  }
+
+  

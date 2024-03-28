@@ -8,6 +8,27 @@
 }
 
 .category-icon{
-    margin: 10px 110px;
+    margin: 10px 110px; 
+    font-size: 40px;
     cursor: pointer;
+}
+
+.category-icon-text{
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .category-icon{
+        margin: 10px 25px; 
+        font-size: 24px;
+    }
+    .category-banner{
+        height: 80px;
+    }
+
+    .category-icon-text{
+        font-size: 11px;
+    }
+    
 }
