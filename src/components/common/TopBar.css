@@ -1,15 +1,19 @@
-
 .topbar {
     width: 100%;
     top: 0px;
     height: 100px;
     color: white;
     display: flex;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0px 60px;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+}
+
+.app-name {
+    font-size: 26px;
+    font-weight: 400;
+    align-items: center;
 }
 
 .searchbar {
@@ -21,6 +25,23 @@
     color: white;
 }
 
+.search-icon {
+    color: white;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.searchbar-mobile{
+    display: none;
+}
+
+.search-icon-mobile{
+    display: none;
+}
+
+
+
+
 .route-options {
     display: flex;
     margin-left: auto;
@@ -28,10 +49,11 @@
 }
 
 .route-option-item {
-    text-decoration: none; 
+    text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 300;
+    padding-left: 40px;
 }
 
 .route-option-item:hover {
@@ -42,4 +64,50 @@
 input:focus {
     outline: none;
     border-bottom: 2px solid #ccc;
+}
+
+@media (max-width: 767px) {
+
+    .topbar {
+        height: 70px;
+        display: flex;
+        padding: 0px 20px;
+
+    }
+
+    .app-name {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .route-option-item {
+        font-size: 16px;
+        font-weight: 300;
+        padding-left: 20px;
+    }
+
+    .searchbar-mobile {
+        position: absolute;
+        display: flex;
+        left: 50%; 
+        transform: translateX(-50%);
+        top: 85px;
+        background-color: white;
+        border-radius: 25px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 90%;
+        padding: 5px 20px;
+        color: black;
+        font-size: 15px;
+    }
+    
 }

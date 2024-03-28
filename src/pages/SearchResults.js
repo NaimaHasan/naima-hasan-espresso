@@ -1,11 +1,10 @@
 import React from "react";
 import { TopBar } from "../components/common/TopBar";
-import { ItemCard } from "../components/common/ItemCard";
-import { FilterBar } from "../components/common/FilterBar";
 import { Item } from "../components/common/Item";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getRecipeByName } from "../services/CallApi";
+import "./SearchResults.css"
 
 export const SearchResults = () => {
   const { searchQuery } = useParams();
@@ -24,7 +23,7 @@ export const SearchResults = () => {
   return (
     <div style={{ backgroundColor: " #e0d9c7", minHeight: "200vh" }}>
       <TopBar routeName={"Search Results"} />
-      <div style={{paddingTop: "160px", textAlign: "center", fontSize: "30px"}}>Search Results</div>
+      <div className="search-results-text">Search Results</div>
       {recipes && <Item recipes={recipes}/>}
     </div>
   );

@@ -11,44 +11,60 @@ export const TopBar = ({ routeName }) => {
     setSearchInput(event.target.value);
   };
 
-  return (
-    <div
-      className="topbar"
-      style={{
-        backgroundColor: routeName === "Home" ? "" : "#575040",
-        position: routeName === "Home" ? "absolute" : "fixed",
-      }}
-    >
-      <h3>Espresso</h3>
-      <div className="route-options">
-        {routeNames.map((x, i) => (
-          <div style={{ paddingLeft: "40px" }}>
-            {routeName !== x ? (
-              <Link
-                to={x === "Home" ? "/" : "/favorite"}
-                className="route-option-item"
-              >
-                {x}
-              </Link>
-            ) : (
-              ""
-            )}
-          </div>
-        ))}
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      window.location.href = "/searchResults/" + searchInput;
+    }
+  };
 
-        <input
-          className="hero-searchbar"
-          value={searchInput}
-          onChange={handleSearchInputChange}
-          placeholder="Search"
-        />
-        <Link
-          to={"/searchResults/" + searchInput}
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <Search style={{ color: "white", margin: "15px" }} size="20px" />
-        </Link>
+  return (
+    <div>
+      <div
+        className="topbar"
+        style={{
+          backgroundColor: routeName === "Home" ? "" : "#575040",
+          position: routeName === "Home" ? "absolute" : "fixed",
+        }}
+      >
+        <div className="app-name">Espresso</div>
+        <div className="route-options">
+          {routeNames.map((x, i) => (
+            <div>
+              {routeName !== x ? (
+                <Link
+                  to={x === "Home" ? "/" : "/favorite"}
+                  className="route-option-item"
+                >
+                  {x}
+                </Link>
+              ) : (
+                ""
+              )}
+            </div>
+          ))}
+
+          <input
+            className="searchbar"
+            value={searchInput}
+            onChange={handleSearchInputChange}
+            placeholder="Search"
+            onKeyDown={handleKeyDown}
+          />
+          <Link
+            to={"/searchResults/" + searchInput}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Search className="search-icon" />
+          </Link>
+        </div>
       </div>
+      <input
+        className="searchbar-mobile"
+        value={searchInput}
+        onChange={handleSearchInputChange}
+        placeholder="Search"
+        onKeyDown={handleKeyDown}
+      />
     </div>
   );
 };

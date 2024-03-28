@@ -20,15 +20,15 @@
 
 @media (max-width: 767px) {
     .category-icon{
-        margin: 10px 25px; 
-        font-size: 24px;
+        margin: 10px 26px; 
+        font-size: 25px;
     }
     .category-banner{
         height: 80px;
     }
 
     .category-icon-text{
-        font-size: 11px;
+        font-size: 10px;
     }
     
 }
