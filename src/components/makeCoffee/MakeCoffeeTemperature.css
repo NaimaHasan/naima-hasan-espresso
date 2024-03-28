@@ -1,0 +1,22 @@
+
+.temp-button {
+    background-color: #575040;
+    display: flex;
+    color: #e0d9c7;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    margin: 30px 50px 20px 0px;
+    padding: 18px 30px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.temp-button:hover {
+    background-color: #333029;
+}
+
+.temp-button-selected {
+    background-color: #24221d;
+}

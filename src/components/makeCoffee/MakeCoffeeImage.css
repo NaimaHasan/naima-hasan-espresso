@@ -1,0 +1,17 @@
+.make-coffee-image {
+    position: absolute;
+    object-fit: cover;
+    width: 30%;
+    height: auto;
+    translate: -50% -30%;
+
+}
+
+.make-coffee-smoke {
+    position: absolute;
+    object-fit: cover;
+    width: 30%;
+    height: auto;
+    translate: -55% -80%;
+
+}
