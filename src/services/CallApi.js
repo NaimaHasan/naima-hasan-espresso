@@ -43,7 +43,7 @@ export const getRecipeByName = async (searchQuery) => {
 export const getRecipeByCategory = async (category) => {
   try {
     const response = await getRecipes();
-    if(category === "All")  return response;
+    if (category === "All") return response;
     return response.filter((x) => {
       return x["category"].toLowerCase().includes(category.toLowerCase());
     });
@@ -105,15 +105,21 @@ export const getRecipeByFavorite = async () => {
   }
 };
 
-export const getRecipeByIngredients = async (ingredientsList, category) => {
+export const getRecipeByIngredients = async (ingredientsList, category, sugarSelected) => {
   try {
     const recipes = await getRecipeByCategory(category);
+    if (sugarSelected) {
+      ingredientsList.push('sugar');
+    }
+    
     return recipes.filter((recipe) => {
       const ingredientNames = recipe["ingredients"].map((ingredient) =>
         ingredient["name"].toLowerCase()
       );
       return ingredientsList.every((ingredient) =>
-        ingredientNames.includes(ingredient.toLowerCase())
+        ingredientNames.some((ingredientName) =>
+          ingredientName.includes(ingredient.toLowerCase())
+        )
       );
     });
   } catch (error) {

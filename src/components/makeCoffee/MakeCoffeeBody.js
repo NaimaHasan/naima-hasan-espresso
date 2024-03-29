@@ -42,7 +42,7 @@ export const MakeCoffeeBody = () => {
       setShowNoIngredientsMessage(true);
     } else {
       setShowNoRecipesMessage(false);
-      const recipes = await getRecipeByIngredients(ingredients, temperature);
+      const recipes = await getRecipeByIngredients(ingredients, temperature, sugarSelected);
       if (recipes.length === 0) {
         setShowNoRecipesMessage(true);
       } else {
