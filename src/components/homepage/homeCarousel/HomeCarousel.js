@@ -12,17 +12,22 @@ import "react-multi-carousel/lib/styles.css";
 export const HomeCarousel = ({ recipes }) => {
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1724 },
       items: 4,
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1724, min: 1524 },
+      items: 3,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    minitablet: {
+      breakpoint: { max: 1524, min: 864 },
       items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 864, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },

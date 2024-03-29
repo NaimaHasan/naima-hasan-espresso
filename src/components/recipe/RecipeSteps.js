@@ -27,15 +27,13 @@ export const RecipeSteps = ({ steps }) => {
                     <div style={{ marginRight: "14px" }}>
                       {checkStates[index] ? (
                         <CheckSquareFill
-                          size="18px"
-                          className="icon-hover"
+                          className="icon-hover step-check"
                           style={{ color: "#575040" }}
                           onClick={() => handleCheckClick(index)}
                         />
                       ) : (
                         <Square
-                          size="18px"
-                          className="icon-hover"
+                          className="icon-hover step-check"
                           style={{ color: "black" }}
                           onClick={() => handleCheckClick(index)}
                         />

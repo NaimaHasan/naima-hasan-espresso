@@ -18,7 +18,32 @@
     background-color: #24221d;
 }
 
+.ingredient-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .pick-ingredient-heading{
     font-size: 22px;
      padding: 50px 20px 0px 0px;
+}
+
+@media (max-width: 767px) {
+    .ingredient-button {
+        font-size: 16px;
+        margin: 0px 0px 20px 20px;
+        padding: 10px 13px;
+        cursor: pointer;
+    }
+    
+    .pick-ingredient-heading{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .ingredient-container{
+        padding-right: 20px;
+    }
+    
+
 }

@@ -57,17 +57,6 @@ export const MakeCoffeeBody = () => {
           className="make-coffee-column2 d-flex flex-column"
         >
           <div>
-            <div
-              style={{
-                fontSize: "20px",
-                paddingBottom: "30px",
-                fontWeight: "200",
-              }}
-            >
-              Press the submit button to see the what can be made with the
-              selected ingredients. <br /> Press the clear button to clear the
-              suggested recipes.
-            </div>
 
             <MakeCoffeeTemperature
               isTemperatureSelected={isTemperatureSelected}
@@ -84,10 +73,15 @@ export const MakeCoffeeBody = () => {
               onClick={() => {
                 setIngredients([]);
                 setSugarSelected(false);
-                setTemperature("All")
+                setTemperature("All");
               }}
             >
               Clear Ingredients
+            </div>
+            <div className="make-coffee-top-text">
+              Press the submit button to see the what can be made with the
+              selected ingredients. <br /> Press the clear button to clear the
+              suggested recipes.
             </div>
             <div style={{ display: "flex" }}>
               <div

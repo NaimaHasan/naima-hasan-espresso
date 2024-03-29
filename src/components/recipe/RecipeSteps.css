@@ -29,3 +29,30 @@
     display: flex;
 
 }
+
+.step-check{
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .step-container {
+        padding-top: 40px;
+    }
+    
+    .step-card {
+        padding: 20px;
+    }
+    
+    .step-heading {
+        font-size: 24px;
+    }
+    
+    .step-text {
+        font-size: 18px;
+        margin: 10px 10px;
+    }
+
+    .step-check{
+        font-size: 14px;
+    }
+}

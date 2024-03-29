@@ -10,7 +10,7 @@ export const RecipeBanner = ({recipe}) => {
   return (
     <Container>
       <Row>
-        <Col xs={12} md={6} xl={5} className="d-flex flex-column">
+        <Col xs={12} md={12} lg={12} xl={5} className="d-flex flex-column">
           <Card className="recipe-card">
             <Image src={recipe["image-url"]} className="recipe-image" />
             <div className="recipe-heart">
@@ -21,7 +21,7 @@ export const RecipeBanner = ({recipe}) => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={11} md={6} xl={6} className="d-flex flex-column">
+        <Col xs={12} md={12} lg={12} xl={6} className="d-flex flex-column">
           <div className="recipe-name">{recipe["name"]}</div>
           <div className="recipe-quote">
             {recipe["description"]}

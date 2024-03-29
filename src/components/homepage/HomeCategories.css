@@ -18,6 +18,20 @@
     text-align: center;
 }
 
+@media (max-width: 1367px) {
+    .category-icon{
+        margin: 10px 50px; 
+    }
+}
+
+@media (max-width: 1067px) {
+    .category-icon{
+        margin: 10px 40px; 
+        font-size: 30px;
+    }
+}
+
+
 @media (max-width: 767px) {
     .category-icon{
         margin: 10px 26px; 

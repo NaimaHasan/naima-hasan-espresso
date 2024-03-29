@@ -1,6 +1,6 @@
 .recipe-container {
     top: 220px;
-    margin: 0px 200px;
+    margin: 0px 11%;
     padding-bottom: 100px;
     background-color: #e0d9c7;
 }
@@ -9,8 +9,10 @@
     .recipe-container {
         top: 140px;
         margin: 0px 15px;
-        padding-bottom: 100px;
+        padding-bottom: 20px;
         background-color: #e0d9c7;
+        align-items: center;
+        justify-content: center;
     }
 
 }

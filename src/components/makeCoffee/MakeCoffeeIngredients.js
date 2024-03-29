@@ -11,7 +11,7 @@ export const MakeCoffeeIngredients = ({
   return (
     <div>
       <div className="pick-ingredient-heading">Pick your ingredients</div>
-      <div style={{ display: "flex" }}>
+      <div className="ingredient-container">
         {ingredientsList.map((ingredient, index) => (
           <div
             key={index}

@@ -9,7 +9,7 @@ export const MakeCoffeeTemperature = ({isTemperatureSelected, toggleTemperature}
       };
   return (
     <div>
-        <div style={{ fontSize: "22px" }}>
+        <div className="temp-text">
               What kind of coffee do you want?
             </div>
             <div style={{ display: "flex" }}>
@@ -25,7 +25,7 @@ export const MakeCoffeeTemperature = ({isTemperatureSelected, toggleTemperature}
                     onClick={() => toggleTemperature(temperature)}
                   >
                     {temperature}
-                    <IconComponent size="28px" style={{ marginLeft: "50px" }} />
+                    <IconComponent className="temp-icon" />
                   </div>
                 )
               )}

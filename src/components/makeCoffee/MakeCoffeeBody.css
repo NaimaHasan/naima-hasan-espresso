@@ -32,3 +32,38 @@
     align-items: center;
     padding-top: 180px;
 }
+
+.make-coffee-top-text {
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-weight: 200;
+}
+
+@media (max-width: 767px) {
+    .make-coffee-button {
+        font-size: 16px;
+        margin: 20px 0px 40px 20px;
+        padding: 10px 10px;
+    }
+
+
+    .make-coffee-column1 {
+        background-color: #624f45;
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .make-coffee-column2 {
+        background-color: #e0d9c7;
+        min-height: auto;
+        padding: 0px;
+    }
+
+    .make-coffee-top-text {
+        font-size: 16px;
+        padding: 0px 20px 0px 20px;
+        font-weight: 200;
+    }
+
+}
