@@ -38,7 +38,7 @@ export const MakeCoffeeBody = () => {
 
   const submitButtonClick = async () => {
     setSuggestedRecipes([]);
-    if (ingredients.length === 0 && temperature === "All") {
+    if (ingredients.length === 0 && temperature === "All" && sugarSelected === false) {
       setShowNoIngredientsMessage(true);
     } else {
       setShowNoRecipesMessage(false);
