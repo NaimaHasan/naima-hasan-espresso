@@ -37,7 +37,8 @@ export const MakeCoffeeBody = () => {
   const isTemperatureSelected = (temp) => temperature === temp;
 
   const submitButtonClick = async () => {
-    if (ingredients.length === 0) {
+    setSuggestedRecipes([]);
+    if (ingredients.length === 0 && temperature === "All") {
       setShowNoIngredientsMessage(true);
     } else {
       setShowNoRecipesMessage(false);
@@ -47,6 +48,12 @@ export const MakeCoffeeBody = () => {
       } else {
         setSuggestedRecipes(recipes);
         setShowNoRecipesMessage(false);
+        const headingElement = document.querySelector(
+          ".suggested-recipe-heading"
+        );
+        if (headingElement) {
+          headingElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }
     }
   };
