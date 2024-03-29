@@ -4,13 +4,26 @@
     align-items: center;
 }
 
+.background-image{
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: auto;
+    padding: 220px 0px 100px 0px;
+    min-height: 100vh;
+}
+
 @media (max-width: 767px) {
     .recipe-container {
-    margin: 0px 8%;
-
-        padding-bottom: 20px;
+        margin: 0px 15px;
+        padding-bottom: 10px;
         align-items: center;
         justify-content: center;
     }
+
+    .background-image{
+        padding: 140px 0px 10px 0px;
+    }
+    
 
 }

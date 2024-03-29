@@ -26,13 +26,8 @@ export const Recipe = () => {
     <div
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        width: "100vw",
-        height: "auto",
-        padding: "220px 0px 100px 0px",
-        minHeight: "100vh",
       }}
+      className="background-image"
     >
       <TopBar routeName={"Recipe"} />
       <Card className="recipe-container" style={{ backgroundColor: "#e0d9c7" }}>

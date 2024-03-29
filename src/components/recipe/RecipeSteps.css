@@ -32,12 +32,17 @@
 
 .step-check{
     font-size: 18px;
-    cursor: pointer;
+}
+
+@media (max-width: 1347px) {
+    .step-container {
+    padding: 30px 32px;
+    }
 }
 
 @media (max-width: 767px) {
     .step-container {
-        padding-top: 40px;
+        padding: 40px 5px 5px 5px;
     }
     
     .step-card {
@@ -58,8 +63,3 @@
     }
 }
 
-@media (max-width: 1347px) {
-    .step-container {
-    padding: 30px 32px;
-    }
-}
