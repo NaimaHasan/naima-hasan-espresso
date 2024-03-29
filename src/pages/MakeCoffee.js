@@ -5,7 +5,7 @@ import { MakeCoffeeBody } from "../components/makeCoffee/MakeCoffeeBody";
 
 export const MakeCoffee = () => {
   return (
-    <div>
+    <div style={{backgroundColor: "#624f45"}}>
       <TopBar routeName={"Make Coffee"} />
       <MakeCoffeeBody/>
     </div>

@@ -1,5 +1,5 @@
 .make-coffee-image {
-    position: absolute;
+    position: fixed;
     object-fit: cover;
     width: 30%;
     height: auto;
@@ -8,7 +8,7 @@
 }
 
 .make-coffee-smoke {
-    position: absolute;
+    position: fixed;
     object-fit: cover;
     width: 30%;
     height: auto;
@@ -19,21 +19,14 @@
 @media (max-width: 767px) {
     .make-coffee-image {
         position: absolute;
-        object-fit: cover;
         width: auto;
         height: 25vh;
         translate: -50% 0%;
-    
     }
-    
     .make-coffee-smoke {
         position: absolute;
-        object-fit: cover;
         width: auto;
         height: 25vh;
         translate: -55% -60%;
-    
     }
-    
-
 }

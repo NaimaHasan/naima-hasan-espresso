@@ -7,6 +7,7 @@ import { getRecipeByIngredients } from "../../services/CallApi";
 import { MakeCoffeeIngredients } from "./MakeCoffeeIngredients";
 import { MakeCoffeeTemperature } from "./MakeCoffeeTemperature";
 import { MakeCoffeeImage } from "./MakeCoffeeImage";
+import { MakeCoffeeRecipe } from "./MakeCoffeeRecipe";
 
 export const MakeCoffeeBody = () => {
   const [ingredients, setIngredients] = useState([]);
@@ -57,7 +58,6 @@ export const MakeCoffeeBody = () => {
           className="make-coffee-column2 d-flex flex-column"
         >
           <div>
-
             <MakeCoffeeTemperature
               isTemperatureSelected={isTemperatureSelected}
               toggleTemperature={toggleTemperature}
@@ -105,24 +105,13 @@ export const MakeCoffeeBody = () => {
             </div>
 
             {suggestedRecipes.length !== 0 && (
-              <div style={{ fontSize: "22px", padding: "50px 20px 0px 0px" }}>
+              <div className="suggested-recipe-heading">
                 Suggested Recipes:
               </div>
             )}
             <div>
-              {/* {suggestedRecipes &&
-                suggestedRecipes.map((recipe, index) => (
-                  <Link
-                    to={"/recipe/" + recipe["id"]}
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    <div key={index} className="ingredient-button">
-                      {recipe["name"]}
-                    </div>
-                  </Link>
-                ))} */}
               {suggestedRecipes.length !== 0 && (
-                <Item recipes={suggestedRecipes} />
+                <MakeCoffeeRecipe recipes={suggestedRecipes} />
               )}
             </div>
           </div>

@@ -9,7 +9,7 @@ export const MakeCoffeeTemperature = ({isTemperatureSelected, toggleTemperature}
       };
   return (
     <div>
-        <div className="temp-text">
+        <div className="temp-heading">
               What kind of coffee do you want?
             </div>
             <div style={{ display: "flex" }}>

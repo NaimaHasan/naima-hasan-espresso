@@ -6,7 +6,7 @@
     width: fit-content;
     border-radius: 5px;
     border: none;
-    margin: 30px 50px 20px 0px;
+    margin: 30px 0px 0px 50px;
     padding: 18px 30px;
     cursor: pointer;
     align-items: center;
@@ -20,8 +20,9 @@
     background-color: #24221d;
 }
 
-.temp-text{
+.temp-heading{
     font-size: 22px;
+    padding: 0px 0px 0px 50px;
 }
 
 .temp-icon{
@@ -29,25 +30,19 @@
     font-size: 28px;
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: 1567px) {
     .temp-button {
         font-size: 16px;
         margin: 0px 0px 0px 20px;
         padding: 10px 15px;
         
     }
-
-    .temp-text{
+    .temp-heading{
         font-size: 20px;
         padding: 20px;
     }
-
     .temp-icon{
         margin-left: 40px;
         font-size: 20px;
     }
-    
-    
-
 }

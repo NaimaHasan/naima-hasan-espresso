@@ -1,0 +1,10 @@
+.make-coffee-recipe-container {
+    padding: 40px 50px 0px 50px;
+}
+
+@media (max-width: 1567px) {
+    .make-coffee-recipe-container {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+}

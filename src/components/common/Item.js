@@ -19,7 +19,7 @@ export const Item = ({ recipes }) => {
         </div>
       ) : (
         <div className="item-container row">
-          {recipes.map((recipe, index) => (
+          {recipes && recipes.map((recipe, index) => (
             <div key={index} className="col mb-4 d-flex justify-content-center">
               <ItemCard recipe={recipe} />
             </div>

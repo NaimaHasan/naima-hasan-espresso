@@ -33,7 +33,7 @@ export const Recipe = () => {
       }}
     >
       <TopBar routeName={"Recipe"} />
-      <Card className="recipe-container">
+      <Card className="recipe-container" style={{backgroundColor: "#e0d9c7"}}>
         {recipe && (
           <RecipeBanner
             recipe = {recipe}
