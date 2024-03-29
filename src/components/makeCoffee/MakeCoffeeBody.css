@@ -1,5 +1,5 @@
 .make-coffee-button {
-    background-color: #575040;
+    background-color: #786c4d;
     color: #e0d9c7;
     font-size: 20px;
     width: fit-content;
@@ -59,7 +59,7 @@
     .make-coffee-button {
         font-size: 16px;
         margin: 20px 0px 40px 20px;
-        padding: 10px 10px;
+        padding: 10px 50px;
     }
 
 

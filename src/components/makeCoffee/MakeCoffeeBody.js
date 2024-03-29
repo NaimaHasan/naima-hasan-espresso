@@ -104,21 +104,6 @@ export const MakeCoffeeBody = () => {
               setSugarSelected={setSugarSelected}
               sugarSelected={sugarSelected}
             />
-            <div
-              className="make-coffee-button"
-              onClick={() => {
-                setIngredients([]);
-                setSugarSelected(false);
-                setTemperature("All");
-              }}
-            >
-              Clear Ingredients
-            </div>
-            <div className="make-coffee-top-text">
-              Press the submit button to see the what can be made with the
-              selected ingredients. <br /> Press the clear button to clear the
-              suggested recipes.
-            </div>
 
             <div style={{ display: "flex" }}>
               <div className="make-coffee-button" onClick={submitButtonClick}>
@@ -128,6 +113,9 @@ export const MakeCoffeeBody = () => {
               <div
                 className="make-coffee-button"
                 onClick={() => {
+                  setIngredients([]);
+                  setSugarSelected(false);
+                  setTemperature("All");
                   setSuggestedRecipes([]);
                   setShowNoRecipesMessage(false);
                 }}
@@ -140,7 +128,9 @@ export const MakeCoffeeBody = () => {
             )}
 
             {showNoIngredientsMessage && (
-              <div className="alert-heading">Please select some ingredients.</div>
+              <div className="alert-heading">
+                Please select some ingredients.
+              </div>
             )}
             {suggestedRecipes.length !== 0 && (
               <div className="suggested-recipe-heading">Suggested Recipes:</div>
