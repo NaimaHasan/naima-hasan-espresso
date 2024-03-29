@@ -29,7 +29,8 @@ export const Recipe = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '100vw',
-        height: '220vh',
+        height: 'auto',
+        padding: '220px 0px 100px 0px',
       }}
     >
       <TopBar routeName={"Recipe"} />

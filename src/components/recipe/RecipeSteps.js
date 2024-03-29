@@ -14,7 +14,7 @@ export const RecipeSteps = ({ steps }) => {
   };
 
   return (
-    <Container>
+    <Container className="m-0">
       <Row>
         <Col xs={12} md={12} xl={12} className="d-flex flex-column">
           <div className="step-container">

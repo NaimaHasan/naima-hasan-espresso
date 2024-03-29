@@ -1,13 +1,13 @@
 .recipe-container {
-    top: 220px;
     margin: 0px 11%;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
 @media (max-width: 767px) {
     .recipe-container {
-        top: 140px;
-        margin: 0px 15px;
+    margin: 0px 8%;
+
         padding-bottom: 20px;
         align-items: center;
         justify-content: center;

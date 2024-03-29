@@ -73,7 +73,6 @@
         width: 20rem;
         margin-bottom: 20px;
         margin-top: 20px;
-
     }
 
     .recipe-heart {
@@ -108,4 +107,19 @@
         margin: 10px;
     }
 
+}
+
+@media (max-width: 1347px) {
+    .flex-grow-1 {
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .recipe-name {
+        margin-top: 5px;
+    }
+
+    .recipe-ingredients-heading {
+        margin-left: 20px;
+    }
 }

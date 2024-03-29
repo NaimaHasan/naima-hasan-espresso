@@ -1,5 +1,5 @@
 .step-container {
-    padding-top: 20px;
+    padding: 30px 20px;
 }
 
 .step-card {
@@ -25,7 +25,7 @@
     font-size: 22px;
     font-weight: 300;
     text-align: start;
-    margin: 20px 130px;
+    margin: 20px 6%;
     display: flex;
 
 }
@@ -54,5 +54,11 @@
 
     .step-check{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 1347px) {
+    .step-container {
+    padding: 30px 32px;
     }
 }

@@ -8,9 +8,9 @@ import { FavoriteHeart } from "../common/FavoriteHeart";
 
 export const RecipeBanner = ({recipe}) => {
   return (
-    <Container>
-      <Row>
-        <Col xs={12} md={12} lg={12} xl={5} className="d-flex flex-column">
+    <Container className="m-0">
+      <Row className="justify-content-center" style={{padding: "20px"}}>
+        <Col md={"auto"} className="d-flex flex-column align-items-center">
           <Card className="recipe-card">
             <Image src={recipe["image-url"]} className="recipe-image" />
             <div className="recipe-heart">
@@ -21,7 +21,7 @@ export const RecipeBanner = ({recipe}) => {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={12} lg={12} xl={6} className="d-flex flex-column">
+        <Col xs={12} md={12} lg={12} xl={6} className="d-flex flex-column flex-grow-1">
           <div className="recipe-name">{recipe["name"]}</div>
           <div className="recipe-quote">
             {recipe["description"]}
