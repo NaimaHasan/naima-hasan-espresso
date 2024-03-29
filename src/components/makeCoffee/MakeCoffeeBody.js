@@ -80,7 +80,7 @@ export const MakeCoffeeBody = () => {
 
   return (
     <div>
-      <Row>
+      <Row className="no-margin">
         <Col
           xs={12}
           md={5}

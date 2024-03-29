@@ -1,6 +1,6 @@
 import React from "react";
 import { ItemCard } from "./ItemCard";
-import "./Item.css"
+import "./Item.css";
 
 export const Item = ({ recipes }) => {
   return (
@@ -18,12 +18,16 @@ export const Item = ({ recipes }) => {
           <p>There is no recipe to display!</p>
         </div>
       ) : (
-        <div className="item-container row">
-          {recipes && recipes.map((recipe, index) => (
-            <div key={index} className="col mb-4 d-flex justify-content-center">
-              <ItemCard recipe={recipe} />
-            </div>
-          ))}
+        <div className="item-container row no-margin">
+          {recipes &&
+            recipes.map((recipe, index) => (
+              <div
+                key={index}
+                className="no-padding col mb-4 d-flex justify-content-center align-item-center"
+              >
+                <ItemCard recipe={recipe} />
+              </div>
+            ))}
 
           <div className={`col-${12 - (recipes.length % 4) * 3} mb-4`} />
         </div>
