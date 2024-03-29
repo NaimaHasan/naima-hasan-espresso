@@ -12,8 +12,8 @@
 
 .hero-welcome-position {
     position: absolute;
-    top: 240px;
-    left: 10%;
+    top: 230px;
+    left: 7%;
     width: 30%;
     color: white;
     text-align: left;
@@ -50,6 +50,7 @@
     outline: none;
     border-bottom: 2px solid #ccc;
 }
+
 
 @media (max-width: 767px) {
     .hero-welcome-position {

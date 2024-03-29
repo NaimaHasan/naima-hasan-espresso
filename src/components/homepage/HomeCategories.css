@@ -20,13 +20,13 @@
 
 @media (max-width: 1367px) {
     .category-icon{
-        margin: 10px 50px; 
+        margin: 10px 80px; 
     }
 }
 
 @media (max-width: 1067px) {
     .category-icon{
-        margin: 10px 40px; 
+        margin: 10px 70px; 
         font-size: 30px;
     }
 }
@@ -34,7 +34,7 @@
 
 @media (max-width: 767px) {
     .category-icon{
-        margin: 10px 26px; 
+        margin: 10px 34px; 
         font-size: 25px;
     }
     .category-banner{

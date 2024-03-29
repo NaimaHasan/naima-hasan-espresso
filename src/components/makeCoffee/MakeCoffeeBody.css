@@ -5,7 +5,7 @@
     width: fit-content;
     border-radius: 5px;
     border: none;
-    margin: 10px 70px 40px 50px;
+    margin: 10px 0px 40px 50px;
     padding: 10px 150px;
     cursor: pointer;
 }
@@ -42,6 +42,19 @@
     padding: 30px 20px 30px 50px;
 }
 
+.alert-heading {
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px 50px 40px 50px;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(235, 184, 184);
+    color: rgb(116, 74, 74) !important;
+}
+
 @media (max-width: 1567px) {
     .make-coffee-button {
         font-size: 16px;
@@ -66,18 +79,19 @@
     }
 
     .suggested-recipe-heading {
-        font-size: 22px;
-        padding: 30px 20px 30px 50px;
-    }
-
-}
-
-@media (max-width: 1567px) {
-    .suggested-recipe-heading {
         font-size: 20px;
         padding: 20px;
     }
+
+    .alert-heading {
+        font-size: 16px;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+
 }
+
 
 @media (max-width: 767px) {
     .make-coffee-column1 {

@@ -32,6 +32,7 @@
 
 .step-check{
     font-size: 18px;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {

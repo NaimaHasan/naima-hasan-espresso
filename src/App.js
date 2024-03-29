@@ -45,20 +45,8 @@ function App() {
               />
             }
           />
-          <Route
-            path="/favorite"
-            element={
-              <Favorite
-                filter={filter}
-                recipes={filteredRecipes}
-                setFilter={setFilter}
-              />
-            }
-          />
-          <Route
-            path="/recipe/:id"
-            element={<Recipe/>}
-          />
+          <Route path="/favorite" element={<Favorite />} />
+          <Route path="/recipe/:id" element={<Recipe />} />
           <Route
             path="/searchResults/:searchQuery"
             element={<SearchResults />}
@@ -74,7 +62,7 @@ function App() {
             }
           />
         </Route>
-        <Route path="/makeCoffee" element={<MakeCoffee/>} />
+        <Route path="/makeCoffee" element={<MakeCoffee />} />
       </Routes>
     </BrowserRouter>
   );

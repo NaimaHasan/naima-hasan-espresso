@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./MakeCoffeeBody.css";
-import { Link } from "react-router-dom";
-import { Item } from "../../components/common/Item";
 import { getRecipeByIngredients } from "../../services/CallApi";
 import { MakeCoffeeIngredients } from "./MakeCoffeeIngredients";
 import { MakeCoffeeTemperature } from "./MakeCoffeeTemperature";
@@ -14,6 +12,9 @@ export const MakeCoffeeBody = () => {
   const [temperature, setTemperature] = useState("All");
   const [sugarSelected, setSugarSelected] = useState(false);
   const [suggestedRecipes, setSuggestedRecipes] = useState([]);
+  const [showNoRecipesMessage, setShowNoRecipesMessage] = useState(false);
+  const [showNoIngredientsMessage, setShowNoIngredientsMessage] =
+    useState(false);
 
   const toggleIngredient = (ingredient) => {
     if (ingredients.includes(ingredient)) {
@@ -34,6 +35,41 @@ export const MakeCoffeeBody = () => {
   };
 
   const isTemperatureSelected = (temp) => temperature === temp;
+
+  const submitButtonClick = async () => {
+    if (ingredients.length === 0) {
+      setShowNoIngredientsMessage(true);
+    } else {
+      setShowNoRecipesMessage(false);
+      const recipes = await getRecipeByIngredients(ingredients, temperature);
+      if (recipes.length === 0) {
+        setShowNoRecipesMessage(true);
+      } else {
+        setSuggestedRecipes(recipes);
+        setShowNoRecipesMessage(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    let dismissTimer;
+    if (showNoRecipesMessage) {
+      dismissTimer = setTimeout(() => {
+        setShowNoRecipesMessage(false);
+      }, 2000);
+    }
+    return () => clearTimeout(dismissTimer);
+  }, [showNoRecipesMessage]);
+
+  useEffect(() => {
+    let dismissTimer;
+    if (showNoIngredientsMessage) {
+      dismissTimer = setTimeout(() => {
+        setShowNoIngredientsMessage(false);
+      }, 2000);
+    }
+    return () => clearTimeout(dismissTimer);
+  }, [showNoIngredientsMessage]);
 
   return (
     <div>
@@ -83,31 +119,31 @@ export const MakeCoffeeBody = () => {
               selected ingredients. <br /> Press the clear button to clear the
               suggested recipes.
             </div>
+
             <div style={{ display: "flex" }}>
-              <div
-                className="make-coffee-button"
-                onClick={async () => {
-                  const recipes = await getRecipeByIngredients(
-                    ingredients,
-                    temperature
-                  );
-                  setSuggestedRecipes(recipes);
-                }}
-              >
+              <div className="make-coffee-button" onClick={submitButtonClick}>
                 Submit
               </div>
+
               <div
                 className="make-coffee-button"
-                onClick={() => setSuggestedRecipes([])}
+                onClick={() => {
+                  setSuggestedRecipes([]);
+                  setShowNoRecipesMessage(false);
+                }}
               >
                 Clear
               </div>
             </div>
+            {showNoRecipesMessage && (
+              <div className="alert-heading">No suggested recipes found.</div>
+            )}
 
+            {showNoIngredientsMessage && (
+              <div className="alert-heading">Please select some ingredients.</div>
+            )}
             {suggestedRecipes.length !== 0 && (
-              <div className="suggested-recipe-heading">
-                Suggested Recipes:
-              </div>
+              <div className="suggested-recipe-heading">Suggested Recipes:</div>
             )}
             <div>
               {suggestedRecipes.length !== 0 && (

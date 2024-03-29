@@ -24,7 +24,7 @@ export const RecipeSteps = ({ steps }) => {
 
                 {steps.map((step, index) => (
                   <div className="step-text" key={index}>
-                    <div style={{ marginRight: "14px" }}>
+                    <div style={{ marginRight: "14px"}}>
                       {checkStates[index] ? (
                         <CheckSquareFill
                           className="icon-hover step-check"

@@ -1,0 +1,13 @@
+.favorite-text{
+    padding-top: 160px;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width: 767px) {
+    .favorite-text{
+        padding-top: 140px;
+        text-align: center;
+        font-size: 22px;
+      }
+}
