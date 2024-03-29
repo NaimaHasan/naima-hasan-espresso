@@ -38,11 +38,22 @@ export const MakeCoffeeBody = () => {
 
   const submitButtonClick = async () => {
     setSuggestedRecipes([]);
-    if (ingredients.length === 0 && temperature === "All" && sugarSelected === false) {
+    if (
+      ingredients.length === 0 &&
+      temperature === "All" &&
+      sugarSelected === false
+    ) {
       setShowNoIngredientsMessage(true);
     } else {
       setShowNoRecipesMessage(false);
-      const recipes = await getRecipeByIngredients(ingredients, temperature, sugarSelected);
+      if (sugarSelected === true) ingredients.push("sugar");
+      const recipes = await getRecipeByIngredients(ingredients, temperature);
+      if (sugarSelected === true) {
+        const sugarIndex = ingredients.indexOf("sugar");
+        if (sugarIndex !== -1) {
+          ingredients.splice(sugarIndex, 1);
+        }
+      }
       if (recipes.length === 0) {
         setShowNoRecipesMessage(true);
       } else {

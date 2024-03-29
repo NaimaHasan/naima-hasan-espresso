@@ -105,13 +105,9 @@ export const getRecipeByFavorite = async () => {
   }
 };
 
-export const getRecipeByIngredients = async (ingredientsList, category, sugarSelected) => {
+export const getRecipeByIngredients = async (ingredientsList, category) => {
   try {
     const recipes = await getRecipeByCategory(category);
-    if (sugarSelected) {
-      ingredientsList.push('sugar');
-    }
-    
     return recipes.filter((recipe) => {
       const ingredientNames = recipe["ingredients"].map((ingredient) =>
         ingredient["name"].toLowerCase()
