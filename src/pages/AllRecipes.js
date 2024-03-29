@@ -9,7 +9,7 @@ export const AllRecipes = ({
   setFilter,
 }) => {
   return (
-    <div style={{ backgroundColor: " #e0d9c7", minHeight: "200vh" }}>
+    <div style={{ backgroundColor: " #e0d9c7", height: "auto", minHeight: "100vh" }}>
       <TopBar routeName={"All Recipes"} />
       <FilterBar filter={filter} setFilter={setFilter} />
       <Item recipes={recipes}/>

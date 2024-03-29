@@ -19,7 +19,7 @@ export const Favorite = ({ filter, setFilter }) => {
   }, null);
 
   return (
-    <div style={{ backgroundColor: " #e0d9c7", minHeight: "200vh" }}>
+    <div style={{ backgroundColor: " #e0d9c7", height: "auto", minHeight: "100vh" }}>
       <TopBar routeName={"Favorites"} />
       <FilterBar filter={filter} setFilter={setFilter} />
       {recipes && <Item recipes={recipes} />}

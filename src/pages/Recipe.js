@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { getRecipeById } from "../services/CallApi";
 import backgroundImage from "../assets/homepage/hero.jpg";
 import { Card } from "react-bootstrap";
-import "./Recipe.css"
+import "./Recipe.css";
 
 export const Recipe = () => {
   const { id } = useParams();
@@ -26,20 +26,17 @@ export const Recipe = () => {
     <div
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        width: '100vw',
-        height: 'auto',
-        padding: '220px 0px 100px 0px',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100vw",
+        height: "auto",
+        padding: "220px 0px 100px 0px",
+        minHeight: "100vh",
       }}
     >
       <TopBar routeName={"Recipe"} />
-      <Card className="recipe-container" style={{backgroundColor: "#e0d9c7"}}>
-        {recipe && (
-          <RecipeBanner
-            recipe = {recipe}
-          />
-        )}
+      <Card className="recipe-container" style={{ backgroundColor: "#e0d9c7" }}>
+        {recipe && <RecipeBanner recipe={recipe} />}
         {recipe && <RecipeSteps steps={recipe.steps} />}
       </Card>
     </div>
