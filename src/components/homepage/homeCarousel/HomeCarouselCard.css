@@ -27,39 +27,70 @@
 
 .carousel-card-title {
     white-space: nowrap;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 18px;
     font-weight: 300;
-  }
+}
+
 
 .gradient-overlay {
     position: absolute;
     right: 0;
     top: 0;
-    width: 40%; 
+    width: 40%;
     height: 21rem;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)); 
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
     margin: 10px 10px;
-  }
+}
 
-  
+.custom-arrow {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    color: #575040;
+    padding: 10px;
+    background-color: #e0d9c7;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
-  @media (max-width: 767px) {
+.left-arrow {
+    left: -4%;
+}
+
+.right-arrow {
+    right: -4%;
+}
+
+.custom-arrow:hover {
+    background-color: #c8c1af;
+}
+
+.custom-arrow-selected {
+    background-color: #c8c1af;
+}
+
+
+
+@media (max-width: 767px) {
     .carousel-card {
         width: 16rem;
         height: 18rem;
     }
-    
+
     .carousel-card-image {
         height: 17rem;
     }
-    
-    .gradient-overlay {
-        width: 30%; 
-        height: 17rem;
-      }
-    
-  }
 
-  
+    .gradient-overlay {
+        width: 30%;
+        height: 17rem;
+    }
+
+    .custom-arrow {
+        font-size: 35px;
+    }
+
+}

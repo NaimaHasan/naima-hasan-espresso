@@ -3,8 +3,8 @@ import { HomeCarouselCard } from "./HomeCarouselCard";
 import { Link } from "react-router-dom";
 import "./HomeCarousel.css";
 import {
-  ArrowLeftCircleFill,
-  ArrowRightCircleFill,
+  ChevronLeft,
+  ChevronRight
 } from "react-bootstrap-icons";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -17,12 +17,12 @@ export const HomeCarousel = ({ recipes }) => {
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1724, min: 1524 },
+      breakpoint: { max: 1724, min: 1324 },
       items: 3,
       slidesToSlide: 1, // optional, default to 1.
     },
     minitablet: {
-      breakpoint: { max: 1524, min: 864 },
+      breakpoint: { max: 1324, min: 864 },
       items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
@@ -31,6 +31,21 @@ export const HomeCarousel = ({ recipes }) => {
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
+  };
+
+  const CustomButtonGroup = ({ next, previous }) => {
+    return (
+      <div>
+        <ChevronLeft
+          className="custom-arrow left-arrow"
+          onClick={previous}
+        />
+        <ChevronRight
+          className="custom-arrow right-arrow"
+          onClick={next}
+        />
+      </div>
+    );
   };
 
   return (
@@ -48,6 +63,9 @@ export const HomeCarousel = ({ recipes }) => {
           responsive={responsive}
           infinite={true}
           itemClass="carousel-item-padding-40-px"
+          arrows={false}
+          renderButtonGroupOutside
+          customButtonGroup={<CustomButtonGroup />}
         >
           {recipes.map((recipe, index) => (
             <div key={index} className="col mb-4 d-flex justify-content-center">
