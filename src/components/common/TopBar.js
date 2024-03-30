@@ -64,6 +64,7 @@ export const TopBar = ({ routeName }) => {
         onChange={handleSearchInputChange}
         placeholder="Search"
         onKeyDown={handleKeyDown}
+        style={{ top: routeName === "Home" ? "70px" : "85px"}}
       />
     </div>
   );

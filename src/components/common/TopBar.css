@@ -99,13 +99,12 @@ input:focus {
         display: flex;
         left: 50%; 
         transform: translateX(-50%);
-        top: 85px;
         background-color: white;
         border-radius: 25px;
         border: none;
         border-bottom: 1px solid #ccc;
         width: 90%;
-        padding: 9px 20px;
+        padding: 6px 20px;
         color: #575040;
         font-size: 15px;
     }
