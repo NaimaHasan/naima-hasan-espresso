@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
+import { animateScroll as scroll } from "react-scroll";
 import "./MakeCoffeeBody.css";
 import { getRecipeByIngredients } from "../../services/CallApi";
 import { MakeCoffeeIngredients } from "./MakeCoffeeIngredients";
@@ -59,11 +60,17 @@ export const MakeCoffeeBody = () => {
       } else {
         setSuggestedRecipes(recipes);
         setShowNoRecipesMessage(false);
-        const headingElement = document.querySelector(
+        const targetElement = document.querySelector(
           ".suggested-recipe-heading"
         );
-        if (headingElement) {
-          headingElement.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        if (targetElement) {
+          scroll.scrollTo(targetElement.offsetTop, {
+            duration: 800, 
+            smooth: "easeInOutQuart", 
+          });
+        } else {
+          console.warn(".suggested-recipe-heading element not found");
         }
       }
     }
