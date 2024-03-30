@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Row, Col } from "react-bootstrap";
 import { animateScroll as scroll } from "react-scroll";
 import "./MakeCoffeeBody.css";
@@ -37,6 +37,17 @@ export const MakeCoffeeBody = () => {
 
   const isTemperatureSelected = (temp) => temperature === temp;
 
+  const targetRef = useRef(null);
+
+  useEffect(() => {
+    if (targetRef.current) {
+      scroll.scrollTo({
+        top: targetRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }, [targetRef]);
+
   const submitButtonClick = async () => {
     setSuggestedRecipes([]);
     if (
@@ -47,29 +58,25 @@ export const MakeCoffeeBody = () => {
       setShowNoIngredientsMessage(true);
     } else {
       setShowNoRecipesMessage(false);
-
-      const updatedIngredients = [...ingredients];
-      if (sugarSelected === true) updatedIngredients.push("sugar");
-
-      const recipes = await getRecipeByIngredients(updatedIngredients, temperature);
-  
+      if (sugarSelected === true) ingredients.push("sugar");
+      const recipes = await getRecipeByIngredients(ingredients, temperature);
+      if (sugarSelected === true) {
+        const sugarIndex = ingredients.indexOf("sugar");
+        if (sugarIndex !== -1) {
+          ingredients.splice(sugarIndex, 1);
+        }
+      }
       if (recipes.length === 0) {
         setShowNoRecipesMessage(true);
       } else {
         setSuggestedRecipes(recipes);
         setShowNoRecipesMessage(false);
-        const targetElement = document.querySelector(
-          ".suggested-recipe-heading"
-        );
-
-        if (targetElement) {
-          scroll.scrollTo(targetElement.offsetTop, {
-            duration: 800, 
-            smooth: "easeInOutQuart", 
-          });
-        } else {
-          console.warn(".suggested-recipe-heading element not found");
-        }
+       
+        setTimeout(() => {
+          if (targetRef.current) {
+            targetRef.current.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 0);
       }
     }
   };
@@ -114,6 +121,7 @@ export const MakeCoffeeBody = () => {
           xs={12}
           md={7}
           xl={7}
+          ref={targetRef}
           className="make-coffee-column2 d-flex flex-column"
         >
           <div>
@@ -156,7 +164,9 @@ export const MakeCoffeeBody = () => {
               </div>
             )}
             {suggestedRecipes.length !== 0 && (
-              <div className="suggested-recipe-heading">Suggested Recipes:</div>
+              <div className="suggested-recipe-heading">
+                Suggested Recipes:
+              </div>
             )}
             <div>
               {suggestedRecipes.length !== 0 && (
