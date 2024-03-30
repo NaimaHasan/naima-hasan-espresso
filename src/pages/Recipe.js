@@ -20,7 +20,7 @@ export const Recipe = () => {
       .catch((error) => {
         console.error("Failed to fetch recipes information:", error);
       });
-  }, [id]);
+  }, []);
 
   return (
     <div
@@ -32,7 +32,7 @@ export const Recipe = () => {
       <TopBar routeName={"Recipe"} />
       <Card className="recipe-container" style={{ backgroundColor: "#e0d9c7" }}>
         {recipe && <RecipeBanner recipe={recipe} />}
-        {recipe && <RecipeSteps steps={recipe.steps} />}
+        {recipe && <RecipeSteps steps={recipe["steps"]} />}
       </Card>
     </div>
   );

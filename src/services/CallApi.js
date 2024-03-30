@@ -22,7 +22,7 @@ export const getRecipeById = async (id) => {
   try {
     const response = await getRecipes();
     return response.filter((x) => {
-      return x["id"] === id;
+      return x["id"].toString() === id;
     })[0];
   } catch (error) {
     throw error;
