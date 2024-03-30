@@ -20,7 +20,7 @@ export const Recipe = () => {
       .catch((error) => {
         console.error("Failed to fetch recipes information:", error);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div
