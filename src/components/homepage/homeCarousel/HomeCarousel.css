@@ -43,7 +43,7 @@
 
   .carousel-see-all {
     right: 0;
-    padding-right: 20px;
+    padding: 15px 8% 5px 0px;
     font-size: 14px;
     text-decoration: underline;
   }

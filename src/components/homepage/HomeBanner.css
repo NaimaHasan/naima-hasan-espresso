@@ -51,7 +51,11 @@
     border-bottom: 2px solid #ccc;
 }
 
-
+@media (max-width: 768px) {
+    .make-coffee {
+        font-size: 17px;
+    }
+}
 @media (max-width: 767px) {
     .hero-welcome-position {
         top: 230px;
