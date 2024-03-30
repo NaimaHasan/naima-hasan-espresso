@@ -104,10 +104,10 @@
 
 @media (max-width: 567px) {
     .left-arrow {
-        left: -2%;
+        left: -1%;
     }
     
     .right-arrow {
-        right: -2%;
+        right: -1%;
     }
 }
