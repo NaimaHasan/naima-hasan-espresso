@@ -14,7 +14,7 @@ export const HomeCarouselCard = ({ recipe }) => {
           style={{ textDecoration: "none", color: "black" }}
         >
           <div>
-            <Image src={recipe["image-url"]} className="carousel-card-image" rounded />
+            <Image src={recipe["image-url"]} className="carousel-card-image" />
             <div className="gradient-overlay"></div>
             <Card.Body className="carousel-card-title">{recipe["name"]}</Card.Body>
           </div>

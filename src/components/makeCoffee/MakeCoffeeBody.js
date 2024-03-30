@@ -47,14 +47,12 @@ export const MakeCoffeeBody = () => {
       setShowNoIngredientsMessage(true);
     } else {
       setShowNoRecipesMessage(false);
-      if (sugarSelected === true) ingredients.push("sugar");
-      const recipes = await getRecipeByIngredients(ingredients, temperature);
-      if (sugarSelected === true) {
-        const sugarIndex = ingredients.indexOf("sugar");
-        if (sugarIndex !== -1) {
-          ingredients.splice(sugarIndex, 1);
-        }
-      }
+
+      const updatedIngredients = [...ingredients];
+      if (sugarSelected === true) updatedIngredients.push("sugar");
+
+      const recipes = await getRecipeByIngredients(updatedIngredients, temperature);
+  
       if (recipes.length === 0) {
         setShowNoRecipesMessage(true);
       } else {
