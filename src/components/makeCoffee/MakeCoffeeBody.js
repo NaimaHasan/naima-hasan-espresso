@@ -121,10 +121,9 @@ export const MakeCoffeeBody = () => {
           xs={12}
           md={7}
           xl={7}
-          ref={targetRef}
           className="make-coffee-column2 d-flex flex-column"
         >
-          <div>
+          <div ref={targetRef}>
             <MakeCoffeeTemperature
               isTemperatureSelected={isTemperatureSelected}
               toggleTemperature={toggleTemperature}
