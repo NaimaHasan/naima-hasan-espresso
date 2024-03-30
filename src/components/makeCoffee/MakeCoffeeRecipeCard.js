@@ -9,7 +9,7 @@ import { FavoriteHeart } from "../common/FavoriteHeart";
 export const MakeCoffeeRecipeCard = ({ recipe }) => {
   return (
     <div>
-      <Card className="make-coffee-recipe-card">
+      <Card className="make-coffee-recipe-card shadow-sm">
         <Link
           to={"/recipe/"+recipe["id"]}
           style={{ textDecoration: "none", color: "#575040" }}

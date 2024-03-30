@@ -20,7 +20,7 @@ export const TopBar = ({ routeName }) => {
   return (
     <div>
       <div
-        className="topbar"
+        className= {routeName === "Home"? "topbar" : "topbar shadow"}
         style={{
           backgroundColor: routeName === "Home" ? "" : "#575040",
           position: routeName === "Home" ? "absolute" : "fixed",

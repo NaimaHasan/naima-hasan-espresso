@@ -2,6 +2,7 @@
     width: 19rem;
     height: 24rem;
     position: relative;
+    border: none !important;
     margin-bottom: 40px;
     padding: 10px 10px 0px 10px;
 }
@@ -40,7 +41,7 @@
     top: 0;
     width: 40%;
     height: 21rem;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
     margin: 10px 10px;
 }
 
@@ -72,8 +73,6 @@
     background-color: #c8c1af;
 }
 
-
-
 @media (max-width: 767px) {
     .carousel-card {
         width: 16rem;
@@ -93,4 +92,22 @@
         font-size: 35px;
     }
 
+    .left-arrow {
+        left: 3%;
+    }
+    
+    .right-arrow {
+        right: 3%;
+    }
+
+}
+
+@media (max-width: 567px) {
+    .left-arrow {
+        left: -2%;
+    }
+    
+    .right-arrow {
+        right: -2%;
+    }
 }

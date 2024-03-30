@@ -8,7 +8,7 @@ import { FavoriteHeart } from "../../common/FavoriteHeart";
 export const HomeCarouselCard = ({ recipe }) => {
   return (
     <div>
-      <Card className="carousel-card" style={{ backgroundColor: "#e0d9c7" }}>
+      <Card className="carousel-card shadow-sm" style={{ backgroundColor: "#e0d9c7" }}>
         <Link
           to={"/recipe/" + recipe["id"]}
           style={{ textDecoration: "none", color: "black" }}

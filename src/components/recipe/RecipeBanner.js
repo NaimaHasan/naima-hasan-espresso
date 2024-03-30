@@ -11,7 +11,7 @@ export const RecipeBanner = ({recipe}) => {
     <Container className="m-0">
       <Row className="justify-content-center" style={{padding: "20px"}}>
         <Col md={"auto"} className="d-flex flex-column align-items-center">
-          <Card className="recipe-card">
+          <Card className="recipe-card shadow">
             <Image src={recipe["image-url"]} className="recipe-image" />
             <div className="recipe-heart">
               <FavoriteHeart id={recipe["id"]} size={"22px"} defaultColor={"black"}/>
